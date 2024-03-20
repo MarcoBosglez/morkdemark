@@ -1,26 +1,27 @@
 "use client"
 import styles from "./page.module.css";
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
-import { styled } from '@mui/material/styles';
 import { useState } from 'react';
 import BackBar from '../backbar'
 
+// EmailJS for emailing
 import emailjs from 'emailjs-com';
 
+// MUI Imports
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import { styled } from '@mui/material/styles';
+import Alert from '@mui/material/Alert';
+
+// Image Imports
 import Image from "next/image";
 import pattern from '../assets/pattern.png'
 
-let NEXT_PUBLIC_EMAIL_JS_SERVICE_ID = process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID
-let TEMPLATE_ID =  process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID
-let PUBLIC_ID = process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_ID
+const SERVICE_ID: string = process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID ?? 'user_id'
+const TEMPLATE_ID: string =  process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID ?? 'template_id'
+const PUBLIC_ID: string = process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_ID ?? 'public_id'
 
 type TextFieldProps = {
   borderColor?: string;
-};
-
-const options = {
-  shouldForwardProp: (prop) => prop !== 'borderColor',
 };
 const outlinedSelectors = [
   '&:hover .MuiOutlinedInput-notchedOutline',
@@ -28,14 +29,7 @@ const outlinedSelectors = [
 ];
 const CSSTextField = styled(
   TextField,
-  options,
-)<TextFieldProps>(({ borderColor }) => ({
-  '& label': {
-    color: borderColor,
-  },
-  '& label.Mui-focused': {
-    color: borderColor,
-  },
+)<TextFieldProps>(() => ({
   [outlinedSelectors.join(',')]: {
     borderWidth: 0,
   },
@@ -68,10 +62,10 @@ export default function Contact() {
     if (formData.name.trim() !== "" && formData.email.trim() !== "" && formData.message.trim() !== "") {
       try {
         emailjs.sendForm(
-          process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID,
-          process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID,
+          SERVICE_ID,
+          TEMPLATE_ID,
           e.target,
-          process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_ID,
+          PUBLIC_ID,
         )
       } catch(err) {console.log(err)}
 
@@ -88,6 +82,11 @@ export default function Contact() {
 
   return (
     <main className={styles.main}>
+      {
+        submit === 'true' ?
+        <div className={styles.alert}><Alert variant="filled" severity='success'>Email Sent.</Alert></div> : <div></div>
+      }
+
       <BackBar/>
 
       <div className={styles.contact}>
@@ -97,33 +96,49 @@ export default function Contact() {
 
             <form onSubmit={sendEmail}>
               <div className={styles.contact_info}>
-                <input 
+                <CSSTextField 
                   type="text"
                   name="name"
                   value={formData.name}
                   onChange={handleInputChange}
                   placeholder="NAME"
+                  label="NAME"
+                  variant="outlined"
+                  error={submit === "false" && formData.name.trim() === "" ? true : false}
+                  sx={{ input: { color: 'white', fontFamily: 'Chillax-Regular' }, label: { color: 'gray', fontFamily: 'Chillax-Regular' } }}
                 />
-                <input 
+                <CSSTextField 
                   type="email"
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
                   placeholder="EMAIL"
+                  label="EMAIL"
+                  variant="outlined"
+                  error={submit === "false" && formData.email.trim() === "" ? true : false}
+                  sx={{ input: { color: 'white', fontFamily: 'Chillax-Regular' }, label: { color: 'gray', fontFamily: 'Chillax-Regular' } }}
                 />
               </div>
 
               <div className={styles.contact_message}>
-                <textarea 
+                <CSSTextField 
+                  multiline
+                  rows={18}
                   name="message"
                   value={formData.message}
                   onChange={handleInputChange}
                   placeholder="MESSAGE"
+                  label="MESSAGE"
+                  variant="outlined"
+                  error={submit === "false" && formData.message.trim() === "" ? true : false}
+                  inputProps={{ style: { color: "white", fontFamily: 'Chillax-Regular' } }}
+                  sx={{label: { color: 'gray', fontFamily: 'Chillax-Regular' } }}
                 />
                 <Button type="submit" value="Send">SUBMIT</Button> {/* onClick={sendEmail} */}
               </div>
             </form>
           </div>
+
 
         <div className={styles.contact_image}>
           <Image src={pattern} width={800} height={800} style={{borderRadius: 25}} alt=""/>

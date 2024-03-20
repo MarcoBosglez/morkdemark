@@ -11,7 +11,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MouseIcon from '@mui/icons-material/Mouse';
-import { BorderAllSharp } from "@mui/icons-material";
+import { BorderAllSharp, Padding } from "@mui/icons-material";
 import Divider from '@mui/material/Divider';
 
 {/* Function Imports*/}
@@ -26,6 +26,7 @@ import seventh_drawing from "/src/app/img/seventh.png"
 import TecIcon from "/src/app/img/TecLogo.png"
 import ScaleIcon from "/src/app/img/ScaleLogo.png"
 import NDSIcon from "/src/app/img/NDSLogo.png"
+import { brown } from "@mui/material/colors";
 
 const ColoredLine = ({ color }) => (
   <hr
@@ -84,120 +85,102 @@ export default function Home() {
       {/* Image Slider Section*/}
       <div className={styles.slider}>
         <div className={styles.slide}>
-          <Image src={first_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={second_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={third_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={fourth_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={fifth_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={sixth_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={seventh_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={first_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={second_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={third_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={fourth_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={fifth_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={sixth_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={seventh_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
         </div>
         <div className={styles.slide}>
-          <Image src={first_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={second_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={third_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={fourth_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={fifth_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={sixth_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={seventh_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={first_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={second_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={third_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={fourth_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={fifth_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={sixth_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={seventh_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
         </div>
         <div className={styles.slide}>
-          <Image src={first_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={second_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={third_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={fourth_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={fifth_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={sixth_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={seventh_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={first_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={second_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={third_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={fourth_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={fifth_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={sixth_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={seventh_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
         </div>
         <div className={styles.slide}>
-          <Image src={first_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={second_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={third_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={fourth_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={fifth_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={sixth_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={seventh_drawing} width={250} height={250} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={first_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={second_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={third_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={fourth_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={fifth_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={sixth_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={seventh_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
         </div>
       </div>
       
       {/* Services Section*/}
       <div className={styles.services} id="services">
-        <h2>Services</h2>
+        <h2>SKILLS</h2>
 
         <div className={styles.service_title}>
-          <Image src={first_drawing} width={140} height={90} style={{borderRadius: 45, padding: 4}} alt=""/>
-          <h1>PYTHON, JAVA</h1>
+          <div style={{borderRadius: 35, backgroundColor: 'orange', width: 150, height:90}}><div className={styles.background_text}>5+</div></div>
+          <h1>C++ PYTHON</h1>
         </div>
         <div className={styles.service_title}>
-          <h1>REACT JS, NODE JS</h1>
-          <Image src={first_drawing} width={140} height={90} style={{borderRadius: 45, padding: 4}} alt=""/>
+          <h1>JAVA C# JS</h1>
+          <div style={{borderRadius: 35, backgroundColor: 'black', width: 150,  height:90}}><div className={styles.background_text}>3Y</div></div>
         </div>
         <div className={styles.service_title}>
-          <Image src={first_drawing} width={140} height={90} style={{borderRadius: 45, padding: 4}} alt=""/>
-          <h1>MORE</h1>
+        <div style={{borderRadius: 35, backgroundColor: 'red', width: 150,  height:90}}><div className={styles.background_text}>2Y</div></div>
+          <h1>REACT NODE</h1>
         </div>
         <div className={styles.service_title}>
-          <h1>WEB DESIGN</h1>
-          <Image src={first_drawing} width={140} height={90} style={{borderRadius: 45, padding: 4}} alt=""/>
+          <h1>UX/UI</h1>
+          <div style={{borderRadius: 35, backgroundColor: 'white', width: 150,  height:90}}><div className={styles.background_text}>1Y</div></div>
         </div>
       </div>
 
       {/* Experience Section*/}
       <div className={styles.experiences} id="experience">
         <h1>Experience</h1>
-
-        <div className={styles.grid}>
-          <a
-            href=""
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className={styles.experience_holder}>
-              <Image src={ScaleIcon} width={60} height={60} alt=""/>
-              <h2>ScaleAI</h2>
-            </div>
-            <div className={styles.experience_info}>
-              <h2 className={styles.experience_role}>Software Developer</h2>
-              <h2 className={styles.experience_date}>Jun 2022 - Feb 2024</h2>
-            </div>
-          </a>
-
-          <a
-            href=""
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className={styles.experience_holder}>
-              <Image src={NDSIcon} width={85} height={40} alt=""/>
-              <h2> </h2>
-              <h2>NDS Cognitive Labs</h2>
-            </div>
-            <div className={styles.experience_info}>
-              <h2 className={styles.experience_role}>Intern</h2>
-              <h2 className={styles.experience_date}>Aug 2022 - Dec 2022</h2>
-            </div>
-          </a>
-
-          <a
-            href=""
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className={styles.experience_holder}>
-              <Image src={TecIcon} width={70} height={70} alt=""/>
-              <h2>Tecnológico de Monterrey</h2>
-            </div>
-            <div className={styles.experience_info}>
-              <h2 className={styles.experience_role}>Bachelor of Science in Computer Engineering</h2>
-              <h2 className={styles.experience_date}>Graduated June 2023</h2>
-            </div>
-          </a>
-
-          <a className={styles.cv} href={"/MarcoBosquez_Resume2024.pdf"} download>Download CV</a>
+        <ColoredLine color="white"/>
+        <div className={styles.resume_item_holder}>
+          <h2>Junior Developer</h2>
+          <p>Scale AI</p>
+          <span><p>06/2022 - 03/2024</p><p>Remote</p></span>
+          <ul style={{paddingLeft: 20 }}>
+            <li>
+              Implementing efficient and reliable web scraping solutions to extract critical data and insights from various online resources. 
+            </li>
+            <li>
+              Ensuring code maintainability, readability, and enhanced error handling in a streamlined web scraping process.
+            </li>
+            <li>
+              Leveraging my expertise in Node.js, Puppeteer and TypeScript to create robusts scripts and automated workflows allowing for
+              seamless data extraction from websites, APIs, and other online repositories.
+            </li>
+          </ul>
+        </div>
+        <div className={styles.resume_item_holder}>
+          <h2>Intern</h2>
+          <p>NDS Cognitive Labs</p>
+          <span><p>08/2022 - 12/2024</p><p>Mexico City, MX</p></span>
+          <ul style={{paddingLeft: 20 }}>
+            <li>
+              Developed a web application using ReactJS for dynamic document searches, enhancing the efficiency of information retrieval for end-users
+            </li>
+            <li>
+              Collaborated with a front-end team in the "Virtual Assistant Management Platform" project to re-train Chatbots,
+              improving their conversational capabilities and user experience. 
+            </li>
+            <li>
+              Utilized technologies such as MongoDB, IBM Watson, and Axios for seamless data retrieval and integration with the web application
+            </li>
+          </ul>
         </div>
       </div>
       
@@ -229,6 +212,7 @@ export default function Home() {
                 <p>Java</p>
                 <p>Spring</p>
                 <p>Docker</p>
+                <p>ReactJS</p>
               </div>
 
               <div className={styles.project_links}>
@@ -283,7 +267,7 @@ export default function Home() {
               </div>
 
               <div className={styles.project_links}>
-                <a href="https://github.com/grchristian/movilidad-urbana">View Repo</a>
+                <a href="https://github.com/grchristian/movilidad-urbana">Github Repo</a>
               </div>
             </div>
           </div>

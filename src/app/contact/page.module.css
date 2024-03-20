@@ -6,10 +6,16 @@
   background-color: #0f0f0f;
 }
 
+.alert {
+  padding-left: 40%;
+  padding-right: 40%;
+}
+
 .contact {
-  padding: 1rem;
-  padding-top: 6rem;
+  padding: 0.5rem;
+  padding-top: 4rem;
   display: flex;
+  height: 900px;
 }
 
 .contact_form {
