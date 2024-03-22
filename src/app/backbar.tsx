@@ -7,6 +7,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import { useState } from "react";
 
+import Link from 'next/link';
+
 export default function BackBar() {
 
     const [menuOpen, setMenuOpen] = useState(false);
@@ -66,15 +68,15 @@ export default function BackBar() {
                 </div>
 
                 <div className="menu-items">
-                    <a onClick={toggleMenu} href="../">Home</a>
+                    <Link onClick={toggleMenu} href="../">Home</Link>
 
-                    <a onClick={toggleMenu} href="../#services">Services</a>
+                    <Link onClick={toggleMenu} href="../#services">Services</Link>
 
-                    <a onClick={toggleMenu} href="../#experience">Experience</a>
+                    <Link onClick={toggleMenu} href="../#experience">Experience</Link>
 
-                    <a onClick={toggleMenu} href="../#projects">Projects</a>
+                    <Link onClick={toggleMenu} href="../#projects">Projects</Link>
 
-                    <a onClick={toggleMenu} href="../illustrations">Art</a>
+                    <Link onClick={toggleMenu} href="../illustrations">Art</Link>
                 </div>
 
                 <div className="social-links">

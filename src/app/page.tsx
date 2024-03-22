@@ -85,40 +85,40 @@ export default function Home() {
       {/* Image Slider Section*/}
       <div className={styles.slider}>
         <div className={styles.slide}>
-          <Image src={first_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={second_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={third_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={fourth_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={fifth_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={sixth_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={seventh_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={first_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={second_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={third_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={fourth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={fifth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={sixth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={seventh_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
         </div>
         <div className={styles.slide}>
-          <Image src={first_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={second_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={third_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={fourth_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={fifth_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={sixth_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={seventh_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={first_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={second_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={third_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={fourth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={fifth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={sixth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={seventh_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
         </div>
         <div className={styles.slide}>
-          <Image src={first_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={second_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={third_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={fourth_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={fifth_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={sixth_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={seventh_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={first_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={second_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={third_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={fourth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={fifth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={sixth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={seventh_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
         </div>
         <div className={styles.slide}>
-          <Image src={first_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={second_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={third_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={fourth_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={fifth_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={sixth_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={seventh_drawing} width={300} height={300} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={first_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={second_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={third_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={fourth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={fifth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={sixth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={seventh_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
         </div>
       </div>
       
@@ -146,7 +146,7 @@ export default function Home() {
 
       {/* Experience Section*/}
       <div className={styles.experiences} id="experience">
-        <h1>Experience</h1>
+        <h1>Work Experience</h1>
         <ColoredLine color="white"/>
         <div className={styles.resume_item_holder}>
           <h2>Junior Developer</h2>
@@ -180,6 +180,16 @@ export default function Home() {
             <li>
               Utilized technologies such as MongoDB, IBM Watson, and Axios for seamless data retrieval and integration with the web application
             </li>
+          </ul>
+        </div>
+
+        <h1>Academic Experience</h1>
+        <ColoredLine color="white"/>
+        <div className={styles.resume_item_holder}>
+          <h2>Bachelor of Science in Computer Engineering</h2>
+          <p>Tecnologico de Monterrey</p>
+          <span><p>08/2019 - 06/2023</p><p>Mexico City, MX</p></span>
+          <ul style={{paddingLeft: 20 }}>
           </ul>
         </div>
       </div>
@@ -372,14 +382,14 @@ export default function Home() {
       </div>
 
       {/* Illustrations Section */}
-      <a href="/contact">
+      <Link href="/contact">
         <div className={styles.contact} id="contact">
           <h2>CONTACT</h2>
           <h1 className={styles.side_title}>LET'S TALK!</h1>
           <h1>LET'S TALK!</h1>
           <h1 className={styles.side_title}>LET'S TALK!</h1>
         </div>
-      </a>
+      </Link>
 
 
     </main>

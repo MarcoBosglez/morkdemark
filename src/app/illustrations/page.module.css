@@ -3,14 +3,6 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: #0f0f0f;
-}
-
-.home {
-  padding: 2rem;
-  background-color: #4137cf;
-  /*background: linear-gradient(5deg, #FFBC42, #3A2EE2);*/
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
   height: auto;
 }
 
@@ -28,22 +20,6 @@
   100% {
     background-position: 0% 50%;
   }
-}
-
-.nav {
-  text-align: center;
-  font-size: 20px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-.about {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-top: 1rem;
 }
 
 .illustrations {
@@ -104,9 +80,6 @@
   padding-left: 1rem;
 }
 
-.logo {
-  position: relative;
-}
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {

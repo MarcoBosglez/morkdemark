@@ -47,6 +47,7 @@ body {
 }
 
 body {
+  position: relative;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -60,10 +61,57 @@ body {
   display: none;
 }
 
+.background-color {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4137cf;
+  display: none;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(36, 34, 46) 50%, #4137cf 50%);
+  
+  bottom: 0%;
+  left:-50%;
+  right:-50%;
+  top: 0;
+
+  opacity:.5;
+  position:fixed;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
 .nav {
+  z-index: 1;
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.nav a {
+  cursor: pointer;
 }
 
 .navbar h1 {
@@ -165,14 +213,14 @@ body {
 
 .menu-items a {
   box-shadow: inset 0 0 0 0 #54b3d6;
-  color: #54b3d6;
+  color: #ffff;
   padding: 0 .55rem;
   margin: 0 -.55rem;
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 .menu-items a:hover {
   color: #fff;
-  box-shadow: inset 1000px 0 0 0 #54b3d6;
+  box-shadow: inset 1000px 0 0 0 orange;
 }
 
 .social-links {

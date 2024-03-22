@@ -40,7 +40,7 @@ export default function Illustrations() {
 
         <div className={styles.drawings}>
           <div className={styles.drawing}>
-            <Image src={second_drawing} width={850} height={850} alt=""/>
+            <div style={{width:850, height:850}}><Image src={second_drawing} width={850} height={850}/></div>
             <div className={styles.info}>
               <div className={styles.info_text}>
                 <h1>"Fate's Grip"</h1>
