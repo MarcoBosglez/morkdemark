@@ -14,7 +14,6 @@ import Alert from '@mui/material/Alert';
 
 // Image Imports
 import Image from "next/image";
-import pattern from "../assets/pattern.png"
 
 const SERVICE_ID: string = process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID ?? 'user_id'
 const TEMPLATE_ID: string =  process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID ?? 'template_id'
@@ -141,7 +140,7 @@ export default function Contact() {
 
 
         <div className={styles.contact_image}>
-          <Image src={pattern} width={800} height={800} style={{borderRadius: 25}} alt=""/>
+          <Image src="/src/app/img/pattern.png" width={800} height={800} style={{borderRadius: 25}} alt=""/>
         </div>
       </div>
     </main>
