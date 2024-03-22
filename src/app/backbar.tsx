@@ -61,8 +61,8 @@ export default function BackBar() {
             <nav className="back">
                 <div className="backbar" style={{padding: 25}}>
                     <div>
-                        <a className="logo" href="http://localhost:3000"><h1>[GO BACK]</h1></a>
-                        <a className="logo_change" href="http://localhost:3000"><h1>{'<<'} G0 B4CK</h1></a>
+                        <a className="logo" href="../"><h1>[GO BACK]</h1></a>
+                        <a className="logo_change" href="../"><h1>{'<<'} G0 B4CK</h1></a>
                     </div>
                     <a className="menu" onClick={toggleMenu} href="#">{ menuOpen === false ? <MenuIcon style={{fontSize: 40}}/> : <CloseIcon style={{fontSize: 40}}/>}</a>
                 </div>
