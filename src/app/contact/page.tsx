@@ -42,7 +42,7 @@ export default function Contact() {
     message: "",
   }))
   
-  const handleInputChange = (event) => {
+  const handleInputChange = (event: any) => {
     const { name, value } = event.target
     setFormData({
       ...formData,
@@ -50,12 +50,12 @@ export default function Contact() {
     })
   }
 
-  const [submit, setSubmit] = useState('')
+  const [submit, setSubmit] = useState(false)
   const handleSubmit = () => {
-    setSubmit(!submit);
+    setSubmit( !submit );
   }
 
-  function sendEmail(e) {
+  function sendEmail(e: any) {
     e.preventDefault();
 
     // If there is an empty value in any of the formData attributes
@@ -74,16 +74,16 @@ export default function Contact() {
         email: "",
         message: "",
       })
-      setSubmit('true')
+      setSubmit(true)
     } else {
-      setSubmit('false')
+      setSubmit(false)
     }
   }
 
   return (
     <main className={styles.main}>
       {
-        submit === 'true' ?
+        submit ?
         <div className={styles.alert}><Alert variant="filled" severity='success'>Email Sent.</Alert></div> : <div></div>
       }
 
@@ -104,7 +104,7 @@ export default function Contact() {
                   placeholder="NAME"
                   label="NAME"
                   variant="outlined"
-                  error={submit === "false" && formData.name.trim() === "" ? true : false}
+                  error={submit === false && formData.name.trim() === "" ? true : false}
                   sx={{ input: { color: 'white', fontFamily: 'Chillax-Regular' }, label: { color: 'gray', fontFamily: 'Chillax-Regular' } }}
                 />
                 <CSSTextField 
@@ -115,7 +115,7 @@ export default function Contact() {
                   placeholder="EMAIL"
                   label="EMAIL"
                   variant="outlined"
-                  error={submit === "false" && formData.email.trim() === "" ? true : false}
+                  error={submit === false && formData.email.trim() === "" ? true : false}
                   sx={{ input: { color: 'white', fontFamily: 'Chillax-Regular' }, label: { color: 'gray', fontFamily: 'Chillax-Regular' } }}
                 />
               </div>
@@ -130,7 +130,7 @@ export default function Contact() {
                   placeholder="MESSAGE"
                   label="MESSAGE"
                   variant="outlined"
-                  error={submit === "false" && formData.message.trim() === "" ? true : false}
+                  error={submit === false && formData.message.trim() === "" ? true : false}
                   inputProps={{ style: { color: "white", fontFamily: 'Chillax-Regular' } }}
                   sx={{label: { color: 'gray', fontFamily: 'Chillax-Regular' } }}
                 />

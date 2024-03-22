@@ -16,7 +16,7 @@ import fifth_drawing from "/src/app/img/fifth.png"
 import sixth_drawing from "/src/app/img/sixth.png"
 import seventh_drawing from "/src/app/img/seventh.png"
 
-const ColoredLine = ({ color }) => (
+const ColoredLine = ( color: any ) => (
     <hr
         style={{
             color: color,
@@ -40,10 +40,10 @@ export default function Illustrations() {
 
         <div className={styles.drawings}>
           <div className={styles.drawing}>
-            <div style={{width:850, height:850}}><Image src={second_drawing} width={850} height={850}/></div>
+            <div style={{width:850, height:850}}><Image src={second_drawing} width={850} height={850} alt="placeholder"/></div>
             <div className={styles.info}>
               <div className={styles.info_text}>
-                <h1>"Fate's Grip"</h1>
+                <h1>&quot;Fate&apos;s Grip&quot;</h1>
                 <div className={styles.info_type}>
                   <p>Photo</p>
                 </div>
@@ -54,10 +54,10 @@ export default function Illustrations() {
           </div>
 
           <div className={styles.drawing}>
-            <Image src={third_drawing} width={850} height={850}  alt=""/>
+            <Image src={third_drawing} width={850} height={850}  alt="palceholder"/>
             <div className={styles.info}>
               <div className={styles.info_text}>
-                <h1>"Samurai"</h1>
+                <h1>&quot;Samurai&quot;</h1>
                 <div className={styles.info_type}>
                   <p>Photo</p>
                 </div>
@@ -68,10 +68,10 @@ export default function Illustrations() {
           </div>
 
           <div className={styles.drawing}>
-            <Image src={first_drawing} width={850} height={850}  alt=""/>
+            <Image src={first_drawing} width={850} height={850}  alt="palceholder"/>
             <div className={styles.info}>
               <div className={styles.info_text}>
-                <h1>"Prisoner"</h1>
+                <h1>&quot;Prisoner&quot;</h1>
                 <div className={styles.info_type}>
                   <p>Photo</p>
                 </div>
@@ -82,10 +82,10 @@ export default function Illustrations() {
           </div>
 
           <div className={styles.drawing}>
-            <Image src={fifth_drawing} width={850} height={850}  alt=""/>
+            <Image src={fifth_drawing} width={850} height={850}  alt="palceholder"/>
             <div className={styles.info}>
               <div className={styles.info_text}>
-                <h1>"Young Italy"</h1>
+                <h1>&quot;Young Italy&quot;</h1>
                 <div className={styles.info_type}>
                   <p>Photo</p>
                 </div>

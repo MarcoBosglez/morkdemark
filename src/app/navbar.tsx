@@ -20,10 +20,10 @@ export default function NavBar() {
 
     const [menuOpen, setMenuOpen] = useState(false);
 
-    const container = useRef();
+    const container = useRef(null);
     const { contextSafe } = useGSAP({ scope: container })
 
-    const scrollOnClick = contextSafe((section) => {
+    const scrollOnClick = contextSafe((section: any) => {
         gsap.to(window, { duration: 1, scrollTo:{ y: section, offsetY: 50 }})
         setMenuOpen(!menuOpen)
         closeMenu()

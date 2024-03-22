@@ -28,7 +28,7 @@ import ScaleIcon from "/src/app/img/ScaleLogo.png"
 import NDSIcon from "/src/app/img/NDSLogo.png"
 import { brown } from "@mui/material/colors";
 
-const ColoredLine = ({ color }) => (
+const ColoredLine = ( color: any ) => (
   <hr
       style={{
           color: color,
@@ -85,40 +85,40 @@ export default function Home() {
       {/* Image Slider Section*/}
       <div className={styles.slider}>
         <div className={styles.slide}>
-          <Image src={first_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={second_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={third_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={fourth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={fifth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={sixth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={seventh_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={first_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={second_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={third_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={fourth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={fifth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={sixth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={seventh_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
         </div>
         <div className={styles.slide}>
-          <Image src={first_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={second_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={third_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={fourth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={fifth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={sixth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={seventh_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={first_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={second_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={third_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={fourth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={fifth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={sixth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={seventh_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
         </div>
         <div className={styles.slide}>
-          <Image src={first_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={second_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={third_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={fourth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={fifth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={sixth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={seventh_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={first_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={second_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={third_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={fourth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={fifth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={sixth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={seventh_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
         </div>
         <div className={styles.slide}>
-          <Image src={first_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={second_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={third_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={fourth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={fifth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={sixth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
-          <Image src={seventh_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt=""/>
+          <Image src={first_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={second_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={third_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={fourth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={fifth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={sixth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={seventh_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
         </div>
       </div>
       
@@ -174,7 +174,7 @@ export default function Home() {
               Developed a web application using ReactJS for dynamic document searches, enhancing the efficiency of information retrieval for end-users
             </li>
             <li>
-              Collaborated with a front-end team in the "Virtual Assistant Management Platform" project to re-train Chatbots,
+              Collaborated with a front-end team in the &quot;Virtual Assistant Management Platform&quot; project to re-train Chatbots,
               improving their conversational capabilities and user experience. 
             </li>
             <li>
@@ -213,7 +213,7 @@ export default function Home() {
                 </span>
               </div>
 
-              <Image src={first_drawing} width={170} height={170} style={{borderRadius: 45}} alt=""/>
+              <Image src={first_drawing} width={170} height={170} style={{borderRadius: 45}} alt="placeholder1"/>
 
             </div>
 
@@ -294,7 +294,7 @@ export default function Home() {
                 </span>
               </div>
 
-              <Image src={first_drawing} width={170} height={170} style={{borderRadius: 45}} alt=""/>
+              <Image src={first_drawing} width={170} height={170} style={{borderRadius: 45}} alt="placeholder1"/>
 
             </div>
 
@@ -323,10 +323,10 @@ export default function Home() {
 
         <div className={styles.drawings}>
           <div className={styles.drawing}>
-            <Image src={second_drawing} width={550} height={550} style={{padding: 8}} alt=""/>
+            <Image src={second_drawing} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
             <div className={styles.info}>
               <div className={styles.info_text}>
-                <h1>"Fate's Grip"</h1>
+                <h1>&quot;Fate&apos;s Grip&quot;</h1>
                 <div className={styles.info_type}>
                   <p>Photo</p>
                 </div>
@@ -337,10 +337,10 @@ export default function Home() {
           </div>
 
           <div className={styles.drawing}>
-            <Image src={third_drawing} width={550} height={550} style={{padding: 8}} alt=""/>
+            <Image src={third_drawing} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
             <div className={styles.info}>
               <div className={styles.info_text}>
-                <h1>"Samurai"</h1>
+                <h1>&quot;Samurai&quot;</h1>
                 <div className={styles.info_type}>
                   <p>Photo</p>
                 </div>
@@ -351,10 +351,10 @@ export default function Home() {
           </div>
 
           <div className={styles.drawing}>
-            <Image src={first_drawing} width={550} height={550} style={{padding: 8}} alt=""/>
+            <Image src={first_drawing} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
             <div className={styles.info}>
               <div className={styles.info_text}>
-                <h1>"Prisoner"</h1>
+                <h1>&quot;Prisoner&quot;</h1>
                 <div className={styles.info_type}>
                   <p>Photo</p>
                 </div>
@@ -365,10 +365,10 @@ export default function Home() {
           </div>
 
           <div className={styles.drawing}>
-            <Image src={fifth_drawing} width={550} height={550} style={{padding: 8}} alt=""/>
+            <Image src={fifth_drawing} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
             <div className={styles.info}>
               <div className={styles.info_text}>
-                <h1>"Young Italy"</h1>
+                <h1>&quot;Young Italy&quot;</h1>
                 <div className={styles.info_type}>
                   <p>Photo</p>
                 </div>
@@ -385,9 +385,9 @@ export default function Home() {
       <Link href="/contact">
         <div className={styles.contact} id="contact">
           <h2>CONTACT</h2>
-          <h1 className={styles.side_title}>LET'S TALK!</h1>
-          <h1>LET'S TALK!</h1>
-          <h1 className={styles.side_title}>LET'S TALK!</h1>
+          <h1 className={styles.side_title}>LET&apos;S TALK!</h1>
+          <h1>LET&apos;S TALK!</h1>
+          <h1 className={styles.side_title}>LET&apos;S TALK!</h1>
         </div>
       </Link>
 
