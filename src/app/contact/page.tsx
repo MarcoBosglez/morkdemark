@@ -14,7 +14,7 @@ import Alert from '@mui/material/Alert';
 
 // Image Imports
 import Image from "next/image";
-import pattern from "/src/app/assets/pattern.png";
+import pattern from "../assets/pattern.png"
 
 const SERVICE_ID: string = process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID ?? 'user_id'
 const TEMPLATE_ID: string =  process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID ?? 'template_id'
