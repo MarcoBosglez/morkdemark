@@ -77,6 +77,10 @@
   display: flex;
 }
 
+.contact_image div{
+  background: url(../assets/111.avif);
+}
+
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {

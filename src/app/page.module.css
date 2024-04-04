@@ -140,8 +140,7 @@
 .services h1 {
   font-family: 'Chillax-Semibold' !important;
   font-size: 120px;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 1.5rem;
 }
 
 .background_text {
@@ -154,11 +153,29 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 
-  background-image: url(../app/assets/pattern1.PNG);
-  background-size: 1000%;
+  background-image: url(../app/assets/111.avif);
+  background-size: 600%;
 }
 
 .background_text {
+    animation: bg-animation 100s cubic-bezier(0.3,0,0.7,1) infinite;
+}
+
+.background_text_alt {
+  color: transparent;
+  font-family: 'Chillax-Semibold';
+  font-size: 100px;
+  align-items: center;
+  justify-content: center;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+  background-image: url(../app/assets/555.jpg);
+  background-size: 600%;
+}
+
+.background_text_alt {
     animation: bg-animation 100s cubic-bezier(0.3,0,0.7,1) infinite;
 }
   
@@ -169,20 +186,33 @@
 }
 
 .experiences {
-  padding: 4rem;
-  padding-top: 12rem;
-  padding-bottom: 12rem;
+  padding: 6rem;
+  padding-top: 18rem;
+  padding-bottom: 18rem;
 }
 
 .experiences h1{
-  font-size: 25px;
-  padding: 0.5rem;
+  font-size: 30px;
+  padding: 3rem;
   font-family: 'Chillax-Extralight' !important;
+  align-items: center;
+  text-align: center;
+}
+
+.experience_holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 40px;
 }
 
 .resume_item_holder {
   font-size: 18px;
-  margin: 1rem;
+  background-color: #002bff;
+  padding: 30px;
+  width: 500px;
+  height: 500px;
+  border-radius: 30px;
 }
 
 .illustrations .top{
@@ -236,20 +266,41 @@
 .item_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: 25px;
   grid-auto-rows: minmax(100px, auto);
 }
 
-.projects_title {
+ .item_grid > div:hover {
+   height: auto;
+} 
+
+.item_grid > div:hover .project_utils{
+  transition: all 0.3s ease;
+  opacity: 1;
+  max-height: 250px;
+}
+
+.item_grid > div:hover .project_description {
+  padding-top: 2rem;
+}
+
+.project_utils {
+  opacity: 0;
+  max-height:0;
+  transition: all 0.3s ease;
+}
+
+.item_grid > h1 {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
+  font-size: 80px;
+  color: white;
+  line-height: 100px;
 }
 
 .project_a {
-  border: 2px solid rgb(233 171 88);
   background-color: rgb(233 171 88);
   grid-column: 1 / 3;
   grid-row: 1;
@@ -259,8 +310,24 @@
   justify-content: space-between;
 }
 
+.project_b {
+  background-color: rgba(163, 88, 233);
+  grid-column: 1;
+  grid-row: 2 / 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project_c {
+  background-color: rgba(233, 88, 88);
+  grid-column: 3;
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .project_d {
-  border: 2px solid rgb(88, 233, 107);
   background-color: rgba(88, 233, 95);
   grid-column: 2 / 4;
   grid-row: 3;
@@ -274,10 +341,23 @@
   display: flex;
   flex-direction: row;
   gap: 60px;
+  transition: all 0.3s ease;
 }
 
-.project_a .project_text p, .project_d .project_text p {
+.project_text h1 {
+  color: white;
+}
+
+.project_text p {
   padding-bottom: 15px;
+  font-size: 20px;
+  font-style: italic;
+  color: black;
+}
+
+.project_text span {
+  font-size: 22px;
+  color: black;
 }
 
 .project_utils {
@@ -298,39 +378,35 @@
   border-radius: 20px;
   background-color: rgba(255, 255, 255);
   color: black;
+
   padding-left: 0.7rem;
   padding-right: 0.7rem;
 }
 
 .project_links{
-  border-radius: 10px;
-  background-color: rgb(76, 159, 255);
+  border-radius: 5px;
+  background: #111;
+  cursor: pointer;
+}
+
+.project_links a{
+  font-size: 15px;
+  background: #111;
   color: black;
-  width: auto;
-  height: 40px;
+  color: #fff;
 }
 
-.project_b {
-  border: 2px solid rgb(163, 88, 233);
-  background-color: rgba(163, 88, 233);
-  grid-column: 1;
-  grid-row: 2 / 4;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.project_c {
-  border: 2px solid rgb(233, 88, 88);
-  background-color: rgba(233, 88, 88);
-  grid-column: 3;
-  grid-row: 1 / 3;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.project_links:hover {
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background-size: 300%;
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
 }
 
-.project_b .project_text p, .project_c .project_text p {
-  padding-bottom: 15px;
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
 }
 
 .illustrations {

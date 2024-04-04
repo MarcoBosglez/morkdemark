@@ -1,21 +1,58 @@
 "use client"
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { useState } from "react";
+
+import { ScrollToPlugin } from 'gsap/dist/ScrollToPlugin';
+
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-import { useState } from "react";
-
 import Link from 'next/link';
+import React from 'react';
+
+gsap.registerPlugin(ScrollToPlugin);
 
 export default function BackBar() {
 
     const [menuOpen, setMenuOpen] = useState(false);
 
-    const toggleMenu = () => {
+    const container = useRef(null);
+    const { contextSafe } = useGSAP({ scope: container })
+
+    const openMenu = contextSafe(() => {
         setMenuOpen(!menuOpen)
-    }
+        gsap.fromTo('.background-color, .menu-items, .social-links', {
+            x: 3000,
+            opacity: 0,
+            duration: 0.5,
+            ease: "slow(0.7,0.7,false)",
+        }, {
+            x: 0,
+            opacity: 1,
+            duration: 0.5,
+            ease: "slow(0.7,0.7,false)",
+        })
+    })
+
+    const closeMenu = contextSafe(() => {
+        gsap.fromTo('.background-color, .menu-items, .social-links', {
+            x: 0,
+            opacity: 1,
+            duration: 0.5,
+            ease: "slow(0.7,0.7,false)",
+        }, {
+            x: 2050,
+            opacity: 0,
+            duration: 0.5,
+            ease: "slow(0.7,0.7,false)",
+        })
+        setMenuOpen(!menuOpen)
+    })
 
     return (
         <div>
@@ -27,36 +64,23 @@ export default function BackBar() {
                     img, form {
                         display: ${menuOpen ? 'none' : 'visible'};
                     }
-                    .back {
-                        background-color: ${menuOpen ? '#0f0f0f' : ''};
-                        height: ${menuOpen ? '200%' : '0%'}
-                        background: linear-gradient(-45deg, #FFBC42, #782ED9);
-                        background-size: 200% 200%;
-                        animation: gradient 15s ease infinite;
-                        transition: all 0.5s ease;
-                    }
-                    @keyframes gradient {
-                        0% {
-                            background-position: 0% 50%;
-                        }
-                        50% {
-                            background-position: 100% 50%;
-                        }
-                        100% {
-                            background-position: 0% 50%;
-                        }
-                    }
                     .menu {
                         margin-right: ${menuOpen ? '10px' : '0px'};
                     }
-                    .menu-items {
-                        display: ${menuOpen ? 'flex' : 'none'};
+                    .menu-items, .social-links  {
+                        display: ${menuOpen ? 'visible' : 'none'};
                     }
-                    .social-links {
+                    .background-color {
                         display: ${menuOpen ? 'flex' : 'none'};
                     }
                 `}
             </style>
+
+            <div className="background-color">
+                <div className="bg"></div>
+                <div className="bg bg2"></div>
+                <div className="bg bg3"></div>
+            </div>
 
             <nav className="back">
                 <div className="backbar" style={{padding: 25}}>
@@ -64,19 +88,19 @@ export default function BackBar() {
                         <a className="logo" href="../"><h1>[GO BACK]</h1></a>
                         <a className="logo_change" href="../"><h1>{'<<'} G0 B4CK</h1></a>
                     </div>
-                    <a className="menu" onClick={toggleMenu} href="#">{ menuOpen === false ? <MenuIcon style={{fontSize: 40}}/> : <CloseIcon style={{fontSize: 40}}/>}</a>
+                    <a className="menu" onClick={() => menuOpen === false ? openMenu() : closeMenu()} href="#">{ menuOpen === false ? <MenuIcon style={{fontSize: 40}}/> : <CloseIcon style={{fontSize: 40}}/>}</a>
                 </div>
 
                 <div className="menu-items">
-                    <Link onClick={toggleMenu} href="../">Home</Link>
+                    <Link href="../">Home</Link>
 
-                    <Link onClick={toggleMenu} href="../#services">Services</Link>
+                    <Link href="../#services">Services</Link>
 
-                    <Link onClick={toggleMenu} href="../#experience">Experience</Link>
+                    <Link href="../#experience">Experience</Link>
 
-                    <Link onClick={toggleMenu} href="../#projects">Projects</Link>
+                    <Link href="../#projects">Projects</Link>
 
-                    <Link onClick={toggleMenu} href="../illustrations">Art</Link>
+                    <Link href="../illustrations">Art</Link>
                 </div>
 
                 <div className="social-links">

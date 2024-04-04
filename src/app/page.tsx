@@ -27,6 +27,7 @@ import TecIcon from "/src/app/img/TecLogo.png"
 import ScaleIcon from "/src/app/img/ScaleLogo.png"
 import NDSIcon from "/src/app/img/NDSLogo.png"
 import { brown } from "@mui/material/colors";
+import React from "react";
 
 const ColoredLine = ( color: any ) => (
   <hr
@@ -127,79 +128,77 @@ export default function Home() {
         <h2>SKILLS</h2>
 
         <div className={styles.service_title}>
-          <div style={{borderRadius: 35, backgroundColor: 'orange', width: 150, height:90}}><div className={styles.background_text}>5+</div></div>
+          <div style={{borderRadius: 35, backgroundColor: 'black', width: 150, height:90}}><div className={styles.background_text_alt}>5Y</div></div>
           <h1>C++ PYTHON</h1>
         </div>
         <div className={styles.service_title}>
+          <div style={{borderRadius: 35, backgroundColor: 'white', width: 150,  height:90}}><div className={styles.background_text}>3Y</div></div>
           <h1>JAVA C# JS</h1>
-          <div style={{borderRadius: 35, backgroundColor: 'black', width: 150,  height:90}}><div className={styles.background_text}>3Y</div></div>
         </div>
         <div className={styles.service_title}>
-        <div style={{borderRadius: 35, backgroundColor: 'red', width: 150,  height:90}}><div className={styles.background_text}>2Y</div></div>
+          <div style={{borderRadius: 35, backgroundColor: 'black', width: 150,  height:90}}><div className={styles.background_text_alt}>2Y</div></div>
           <h1>REACT NODE</h1>
         </div>
         <div className={styles.service_title}>
-          <h1>UX/UI</h1>
           <div style={{borderRadius: 35, backgroundColor: 'white', width: 150,  height:90}}><div className={styles.background_text}>1Y</div></div>
+          <h1>UX/UI</h1>
         </div>
       </div>
 
       {/* Experience Section*/}
       <div className={styles.experiences} id="experience">
         <h1>Work Experience</h1>
-        <ColoredLine color="white"/>
-        <div className={styles.resume_item_holder}>
-          <h2>Junior Developer</h2>
-          <p>Scale AI</p>
-          <span><p>06/2022 - 03/2024</p><p>Remote</p></span>
-          <ul style={{paddingLeft: 20 }}>
-            <li>
-              Implementing efficient and reliable web scraping solutions to extract critical data and insights from various online resources. 
-            </li>
-            <li>
-              Ensuring code maintainability, readability, and enhanced error handling in a streamlined web scraping process.
-            </li>
-            <li>
-              Leveraging my expertise in Node.js, Puppeteer and TypeScript to create robusts scripts and automated workflows allowing for
-              seamless data extraction from websites, APIs, and other online repositories.
-            </li>
-          </ul>
-        </div>
-        <div className={styles.resume_item_holder}>
-          <h2>Intern</h2>
-          <p>NDS Cognitive Labs</p>
-          <span><p>08/2022 - 12/2024</p><p>Mexico City, MX</p></span>
-          <ul style={{paddingLeft: 20 }}>
-            <li>
-              Developed a web application using ReactJS for dynamic document searches, enhancing the efficiency of information retrieval for end-users
-            </li>
-            <li>
-              Collaborated with a front-end team in the &quot;Virtual Assistant Management Platform&quot; project to re-train Chatbots,
-              improving their conversational capabilities and user experience. 
-            </li>
-            <li>
-              Utilized technologies such as MongoDB, IBM Watson, and Axios for seamless data retrieval and integration with the web application
-            </li>
-          </ul>
-        </div>
+        <div className={styles.experience_holder}>
+          <div className={styles.resume_item_holder} style={{backgroundColor: '#f0b446', color: 'black'}}>
+            <h2>Junior Developer</h2>
+            <p>Scale AI</p>
+            <span><p>06/2022 - 03/2024</p><p>Remote</p></span>
+            <ul style={{paddingLeft: 20 }}>
+              <li>
+                Implementing efficient and reliable web scraping solutions to extract critical data and insights from various online resources. 
+              </li>
+              <li>
+                Ensuring code maintainability, readability, and enhanced error handling in a streamlined web scraping process.
+              </li>
+              <li>
+                Leveraging my expertise in Node.js, Puppeteer and TypeScript to create robusts scripts and automated workflows allowing for
+                seamless data extraction from websites, APIs, and other online repositories.
+              </li>
+            </ul>
+          </div>
+          <div className={styles.resume_item_holder} style={{backgroundColor: 'brown'}}>
+            <h2>Intern</h2>
+            <p>NDS Cognitive Labs</p>
+            <span><p>08/2022 - 12/2024</p><p>Mexico City, MX</p></span>
+            <ul style={{paddingLeft: 20 }}>
+              <li>
+                Developed a web application using ReactJS for dynamic document searches, enhancing the efficiency of information retrieval for end-users
+              </li>
+              <li>
+                Collaborated with a front-end team in the &quot;Virtual Assistant Management Platform&quot; project to re-train Chatbots,
+                improving their conversational capabilities and user experience. 
+              </li>
+              <li>
+                Utilized technologies such as MongoDB, IBM Watson, and Axios for seamless data retrieval and integration with the web application
+              </li>
+            </ul>
+          </div>
 
-        <h1>Academic Experience</h1>
-        <ColoredLine color="white"/>
-        <div className={styles.resume_item_holder}>
-          <h2>Bachelor of Science in Computer Engineering</h2>
-          <p>Tecnologico de Monterrey</p>
-          <span><p>08/2019 - 06/2023</p><p>Mexico City, MX</p></span>
-          <ul style={{paddingLeft: 20 }}>
-          </ul>
+          <div className={styles.resume_item_holder} style={{backgroundColor: 'black'}}>
+            <h2>Bachelor of Science in Computer Engineering</h2>
+            <p>Tecnologico de Monterrey</p>
+            <span><p>08/2019 - 06/2023</p><p>Mexico City, MX</p></span>
+            <ul style={{paddingLeft: 20 }}>
+            </ul>
+          </div>
+          
         </div>
       </div>
       
       {/* Projects Section*/}
       <div className={styles.projects} id="projects">
         <div className={styles.item_grid}>
-          <div className={styles.projects_title}>
-            <h1>PROJECTS</h1>
-          </div>
+          <h1>PROJECTS</h1>
           <div className={styles.project_a}>
             <div className={styles.project_description}>
               <div className={styles.project_text}>

@@ -114,6 +114,14 @@ body {
   cursor: pointer;
 }
 
+.navbar {
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 .navbar h1 {
   background: linear-gradient(currentColor 0 0) 
     bottom left/
@@ -134,18 +142,15 @@ body {
   display: none;
 }
 
-.navbar {
-  text-align: center;
-  font-size: 20px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
 .back {
+  z-index: 1;
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.back a {
+  cursor: pointer;
 }
 
 .backbar {
@@ -166,6 +171,14 @@ body {
 
 .backbar h1:hover {
   --underline-width: 100%;
+}
+
+.backbar div:hover .logo_change{
+  display: inline;
+}
+
+.backbar div:hover .logo{
+  display: none;
 }
 
 .menu {

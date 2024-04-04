@@ -13,6 +13,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import React from "react";
 
 gsap.registerPlugin(ScrollToPlugin);
 
