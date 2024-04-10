@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #0f0f0f;
+  background-color: #13151d;
 }
 
 .home {
@@ -106,7 +106,7 @@
 .slider {
   z-index: 0;
   white-space: nowrap;
-  background: linear-gradient(#4137cf, #0f0f0f);
+  background: linear-gradient(#4137cf, #13151d);
 }
 
 .slide {
@@ -202,17 +202,51 @@
 .experience_holder {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   gap: 40px;
 }
 
 .resume_item_holder {
   font-size: 18px;
-  background-color: #002bff;
   padding: 30px;
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  height: auto;
   border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume_item_holder .job_organization, .resume_item_holder .school_organization{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.resume_item_holder .job_organization div, .resume_item_holder ul, .resume_item_holder .school_organization div{
+  padding: 20px;
+}
+
+.resume_item_holder .project_technologies {
+  padding-top: 20px;
+}
+
+.resume_item_holder ul li {
+  font-size: 18px;
+  padding: 5px;
+}
+
+.resume_item_holder > p {
+  font-size: 22px;
+  padding: 20px;
+}
+
+.resume_item_holder > img{
+  width: 100%;
+  height: 75%; 
+  border-radius: 20px;
+}
+
+.resume_item_holder .job_organization h2 {
+  font-size: 35px;
 }
 
 .illustrations .top{
@@ -277,11 +311,7 @@
 .item_grid > div:hover .project_utils{
   transition: all 0.3s ease;
   opacity: 1;
-  max-height: 250px;
-}
-
-.item_grid > div:hover .project_description {
-  padding-top: 2rem;
+  max-height: 200px;
 }
 
 .project_utils {

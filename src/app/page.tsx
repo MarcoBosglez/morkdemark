@@ -23,10 +23,10 @@ import fifth_drawing from "/src/app/img/fifth.png"
 import sixth_drawing from "/src/app/img/sixth.png"
 import seventh_drawing from "/src/app/img/seventh.png"
 
+import BachelorsDegree from "/src/app/img/bachelorsdegree.jpg"
 import TecIcon from "/src/app/img/TecLogo.png"
 import ScaleIcon from "/src/app/img/ScaleLogo.png"
 import NDSIcon from "/src/app/img/NDSLogo.png"
-import { brown } from "@mui/material/colors";
 import React from "react";
 
 const ColoredLine = ( color: any ) => (
@@ -147,49 +147,64 @@ export default function Home() {
 
       {/* Experience Section*/}
       <div className={styles.experiences} id="experience">
-        <h1>Work Experience</h1>
+        <h1>Experience</h1>
         <div className={styles.experience_holder}>
-          <div className={styles.resume_item_holder} style={{backgroundColor: '#f0b446', color: 'black'}}>
-            <h2>Junior Developer</h2>
-            <p>Scale AI</p>
-            <span><p>06/2022 - 03/2024</p><p>Remote</p></span>
-            <ul style={{paddingLeft: 20 }}>
-              <li>
-                Implementing efficient and reliable web scraping solutions to extract critical data and insights from various online resources. 
-              </li>
-              <li>
-                Ensuring code maintainability, readability, and enhanced error handling in a streamlined web scraping process.
-              </li>
-              <li>
-                Leveraging my expertise in Node.js, Puppeteer and TypeScript to create robusts scripts and automated workflows allowing for
-                seamless data extraction from websites, APIs, and other online repositories.
-              </li>
-            </ul>
+          <div className={styles.resume_item_holder} id="#scaleai" style={{backgroundColor: 'orange', color: 'black'}}>
+            <div className={styles.job_organization}>
+              <Image src={ScaleIcon} style={{ width: 100, height: 100, borderRadius: 30}} alt={""}></Image>
+              <div>
+                <h2>Scale AI</h2>
+                <p>Jr Developer | Jun 2022 - Feb 2024</p>
+              </div>
+            </div>
+
+            <p>
+              Implemented efficient and reliable web scraping solutions to extract critical data and insights from various online resources. 
+            </p>
+
+            <div className={styles.project_technologies}>
+                <p>Node.js</p>
+                <p>Puppeteer</p>
+                <p>TypeScript</p>
+                <p>Web Scraping</p>
+                <p>APIs</p>
+            </div>
+
           </div>
-          <div className={styles.resume_item_holder} style={{backgroundColor: 'brown'}}>
-            <h2>Intern</h2>
-            <p>NDS Cognitive Labs</p>
-            <span><p>08/2022 - 12/2024</p><p>Mexico City, MX</p></span>
-            <ul style={{paddingLeft: 20 }}>
-              <li>
-                Developed a web application using ReactJS for dynamic document searches, enhancing the efficiency of information retrieval for end-users
-              </li>
-              <li>
-                Collaborated with a front-end team in the &quot;Virtual Assistant Management Platform&quot; project to re-train Chatbots,
-                improving their conversational capabilities and user experience. 
-              </li>
-              <li>
-                Utilized technologies such as MongoDB, IBM Watson, and Axios for seamless data retrieval and integration with the web application
-              </li>
-            </ul>
+          <div className={styles.resume_item_holder} id="#nds" style={{backgroundColor: 'brown'}}>
+            <div className={styles.job_organization}>
+              <Image src={NDSIcon} style={{ width: 100, height: 100, borderRadius: 30}} alt={""}></Image>
+              <div>
+                <h2>NDS Cognitive Labs</h2>
+                <p>Intern | Aug 2022 - Dec 2024</p>
+              </div>
+            </div>
+            <p>
+              Developed a web application using ReactJS for dynamic document searches, enhancing the efficiency of information retrieval for end-users
+            </p>
+
+            <div className={styles.project_technologies}>
+                <p>MongoDB</p>
+                <p>ReactJS</p>
+                <p>IBM Watson</p>
+                <p>Axios</p>
+                <p>APIs</p>
+                <p>ChatBots</p>
+                <p>AI</p>
+            </div>
+
           </div>
 
-          <div className={styles.resume_item_holder} style={{backgroundColor: 'black'}}>
-            <h2>Bachelor of Science in Computer Engineering</h2>
-            <p>Tecnologico de Monterrey</p>
-            <span><p>08/2019 - 06/2023</p><p>Mexico City, MX</p></span>
-            <ul style={{paddingLeft: 20 }}>
-            </ul>
+          <div className={styles.resume_item_holder} id="#tec" style={{backgroundColor: 'black'}}>
+            <Image src={BachelorsDegree} alt={""}></Image>
+            <div className={styles.school_organization}>
+              <Image src={TecIcon} style={{ width: 100, height: 100, borderRadius: 40}} alt={""}></Image>
+              <div>
+                <h2>Tecnologico de Monterrey</h2>
+                <p>Bachelor of Science in Computer Engineering</p>
+                <p>Aug 2019 - Jun 2023</p>
+              </div>
+            </div>
           </div>
           
         </div>

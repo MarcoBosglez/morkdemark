@@ -97,7 +97,7 @@ export default function NavBar() {
                 <div className="menu-items">
                     <a onClick={() => scrollOnClick(0)}>Home</a>
 
-                    <a onClick={() => scrollOnClick(850)}>Services</a>
+                    <a onClick={() => scrollOnClick(850)}>Skills</a>
 
                     <a onClick={() => scrollOnClick(1750)}>Experience</a>
 

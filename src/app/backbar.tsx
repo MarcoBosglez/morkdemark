@@ -94,7 +94,7 @@ export default function BackBar() {
                 <div className="menu-items">
                     <Link href="../">Home</Link>
 
-                    <Link href="../#services">Services</Link>
+                    <Link href="../#services">Skills</Link>
 
                     <Link href="../#experience">Experience</Link>
 
