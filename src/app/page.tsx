@@ -14,7 +14,7 @@ import MouseIcon from '@mui/icons-material/Mouse';
 import { BorderAllSharp, Padding } from "@mui/icons-material";
 import Divider from '@mui/material/Divider';
 
-{/* Function Imports*/}
+{/* Art Imports*/}
 import prisoner_boy from "/src/app/img/prisoner_boy.png"
 import fates_grip from "/src/app/img/fates_grip.png"
 import samurai from "/src/app/img/samurai.png"
@@ -346,7 +346,7 @@ export default function Home() {
         </div>
 
         <div className={styles.drawings}>
-        <div className={styles.drawing}>
+          <div className={styles.drawing}>
             <Image src={death_of_the_pharaoh} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
             <div className={styles.info}>
               <div className={styles.info_text}>

@@ -471,6 +471,14 @@
   flex-wrap: wrap;
 }
 
+.drawing img {
+  transition: 0.5s;
+}
+
+.drawing img:hover {
+  transform: scale(1.05);
+}
+
 .info {
   display: flex;
   flex-direction: column;
