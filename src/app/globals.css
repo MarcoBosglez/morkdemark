@@ -120,6 +120,8 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+
+  mix-blend-mode: difference;
 }
 
 .navbar h1 {
@@ -280,7 +282,11 @@ a {
   text-align: center;
   padding: 2rem;
   color: white;
-  background-color: #0f0f0f;
+  background-color: #13151d;
+}
+
+.made_by > p {
+  font-size: 20px;
 }
 
 .made_by > p > a {
@@ -292,13 +298,26 @@ a {
   align-items: center;
   text-align: center;
   justify-content: center;
-  gap: 20px;
-  padding: 10px;
+  gap: 10px;
+  padding: 5px;
 }
 
-.socials a{
-  display: flex;
-  
+.socials svg{
+  height: 4rem;
+  width: 3rem;
+}
+
+.inner-cursor {
+  position: fixed;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: width 0.5s, height 0.5s;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -23,6 +23,9 @@ import fifth_drawing from "/src/app/img/fifth.png"
 import sixth_drawing from "/src/app/img/sixth.png"
 import seventh_drawing from "/src/app/img/seventh.png"
 
+import pattern1 from "/src/app/assets/111.avif"
+import pattern2 from "/src/app/assets/555.jpg"
+
 import BachelorsDegree from "/src/app/img/bachelorsdegree.jpg"
 import TecIcon from "/src/app/img/TecLogo.png"
 import ScaleIcon from "/src/app/img/ScaleLogo.png"
@@ -38,6 +41,19 @@ const ColoredLine = ( color: any ) => (
       }}
   />
 );
+
+
+/*
+let innerCursor = document.querySelector<HTMLElement>('.inner-cursor');
+
+document.addEventListener('mousemove', moveCursor);
+function moveCursor(e) {
+  let x = e.clientX;
+  let y = e.clientY;
+
+  innerCursor.style.left = `${x}px`;
+  innerCursor.style.top = `${y}px`;
+}*/
 
 export default function Home() {
   return (
@@ -86,40 +102,40 @@ export default function Home() {
       {/* Image Slider Section*/}
       <div className={styles.slider}>
         <div className={styles.slide}>
-          <Image src={first_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={second_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={third_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={fourth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={fifth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={sixth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={seventh_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
         </div>
         <div className={styles.slide}>
-          <Image src={first_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={second_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={third_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={fourth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={fifth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={sixth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={seventh_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
         </div>
         <div className={styles.slide}>
-          <Image src={first_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={second_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={third_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={fourth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={fifth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={sixth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={seventh_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
         </div>
         <div className={styles.slide}>
-          <Image src={first_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={second_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={third_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={fourth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={fifth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={sixth_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={seventh_drawing} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
         </div>
       </div>
       
@@ -147,62 +163,66 @@ export default function Home() {
 
       {/* Experience Section*/}
       <div className={styles.experiences} id="experience">
-        <h1>Experience</h1>
+        <h1>EXPERIENCE</h1>
         <div className={styles.experience_holder}>
-          <div className={styles.resume_item_holder} id="#scaleai" style={{backgroundColor: 'orange', color: 'black'}}>
-            <div className={styles.job_organization}>
-              <Image src={ScaleIcon} style={{ width: 100, height: 100, borderRadius: 30}} alt={""}></Image>
-              <div>
-                <h2>Scale AI</h2>
-                <p>Jr Developer | Jun 2022 - Feb 2024</p>
+          <div className={styles.jobs_holder}>
+            <div className={styles.card_holder} id="#scaleai" style={{backgroundColor: 'rgb(240, 166, 81)', color: 'black'}}>
+              <div className={styles.job_organization}>
+                <Image src={ScaleIcon} style={{ width: 100, height: 100, borderRadius: 30}} alt={""}></Image>
+                <div>
+                  <h2>Scale AI</h2>
+                  <p>Jr Developer | Jun 2022 - Feb 2024</p>
+                </div>
               </div>
-            </div>
 
-            <p>
-              Implemented efficient and reliable web scraping solutions to extract critical data and insights from various online resources. 
-            </p>
+              <p>
+                Implemented efficient and reliable web scraping solutions to extract critical data and insights from various online resources. 
+              </p>
 
-            <div className={styles.project_technologies}>
-                <p>Node.js</p>
-                <p>Puppeteer</p>
-                <p>TypeScript</p>
-                <p>Web Scraping</p>
-                <p>APIs</p>
-            </div>
-
-          </div>
-          <div className={styles.resume_item_holder} id="#nds" style={{backgroundColor: 'brown'}}>
-            <div className={styles.job_organization}>
-              <Image src={NDSIcon} style={{ width: 100, height: 100, borderRadius: 30}} alt={""}></Image>
-              <div>
-                <h2>NDS Cognitive Labs</h2>
-                <p>Intern | Aug 2022 - Dec 2024</p>
+              <div className={styles.project_technologies}>
+                  <p>Node.js</p>
+                  <p>Puppeteer</p>
+                  <p>TypeScript</p>
+                  <p>Web Scraping</p>
+                  <p>APIs</p>
               </div>
-            </div>
-            <p>
-              Developed a web application using ReactJS for dynamic document searches, enhancing the efficiency of information retrieval for end-users
-            </p>
 
-            <div className={styles.project_technologies}>
-                <p>MongoDB</p>
-                <p>ReactJS</p>
-                <p>IBM Watson</p>
-                <p>Axios</p>
-                <p>APIs</p>
-                <p>ChatBots</p>
-                <p>AI</p>
             </div>
+            <div className={styles.card_holder} id="#nds" style={{backgroundColor: 'rgb(216, 84, 84)'}}>
+              <div className={styles.job_organization}>
+                <Image src={NDSIcon} style={{ width: 100, height: 100, borderRadius: 30}} alt={""}></Image>
+                <div>
+                  <h2>NDS Cognitive Labs</h2>
+                  <p>Intern | Aug 2022 - Dec 2024</p>
+                </div>
+              </div>
+              <p>
+                Developed a web application using ReactJS for dynamic document searches, enhancing the efficiency of information retrieval for end-users
+              </p>
 
+              <div className={styles.project_technologies}>
+                  <p>MongoDB</p>
+                  <p>ReactJS</p>
+                  <p>IBM Watson</p>
+                  <p>Axios</p>
+                  <p>APIs</p>
+                  <p>ChatBots</p>
+                  <p>AI</p>
+              </div>
+
+            </div>
           </div>
 
-          <div className={styles.resume_item_holder} id="#tec" style={{backgroundColor: 'black'}}>
-            <Image src={BachelorsDegree} alt={""}></Image>
-            <div className={styles.school_organization}>
-              <Image src={TecIcon} style={{ width: 100, height: 100, borderRadius: 40}} alt={""}></Image>
-              <div>
-                <h2>Tecnologico de Monterrey</h2>
-                <p>Bachelor of Science in Computer Engineering</p>
-                <p>Aug 2019 - Jun 2023</p>
+          <div className={styles.school_holder}>
+            <div className={styles.card_holder} id="#tec" style={{backgroundColor: 'black'}}>
+              <Image src={BachelorsDegree} alt={""}></Image>
+              <div className={styles.school_organization}>
+                <Image src={TecIcon} style={{ width: 100, height: 100, borderRadius: 40}} alt={""}></Image>
+                <div>
+                  <h2>Tecnologico de Monterrey</h2>
+                  <p>Bachelor of Science in Computer Engineering</p>
+                  <p>Aug 2019 - Jun 2023</p>
+                </div>
               </div>
             </div>
           </div>
@@ -226,9 +246,6 @@ export default function Home() {
                   and training purposes
                 </span>
               </div>
-
-              <Image src={first_drawing} width={170} height={170} style={{borderRadius: 45}} alt="placeholder1"/>
-
             </div>
 
             <div className={styles.project_utils}>
@@ -307,9 +324,6 @@ export default function Home() {
                   Made with Python and the “SciKit Learn” library through an automated pipeline using Jupyter Notebook. 
                 </span>
               </div>
-
-              <Image src={first_drawing} width={170} height={170} style={{borderRadius: 45}} alt="placeholder1"/>
-
             </div>
 
             <div className={styles.project_utils}>
@@ -391,6 +405,34 @@ export default function Home() {
               <p className={styles.info_date}>Oct 21, 2023</p>
             </div>
           </div>
+
+          <div className={styles.drawing}>
+            <Image src={sixth_drawing} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
+            <div className={styles.info}>
+              <div className={styles.info_text}>
+                <h1>&quot;&quot;</h1>
+                <div className={styles.info_type}>
+                  <p>Photo</p>
+                </div>
+              </div>
+
+              <p className={styles.info_date}>2023</p>
+            </div>
+          </div>
+
+          <div className={styles.drawing}>
+            <Image src={seventh_drawing} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
+            <div className={styles.info}>
+              <div className={styles.info_text}>
+                <h1>&quot;&quot;</h1>
+                <div className={styles.info_type}>
+                  <p>Photo</p>
+                </div>
+              </div>
+
+              <p className={styles.info_date}>2023</p>
+            </div>
+          </div>
           
         </div>
       </div>
@@ -402,9 +444,22 @@ export default function Home() {
           <h1 className={styles.side_title}>LET&apos;S TALK!</h1>
           <h1>LET&apos;S TALK!</h1>
           <h1 className={styles.side_title}>LET&apos;S TALK!</h1>
+          <ul className={styles.circles}>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            </ul>
         </div>
       </Link>
 
+      {/* <div className='inner-cursor'></div> */}
 
     </main>
   );
