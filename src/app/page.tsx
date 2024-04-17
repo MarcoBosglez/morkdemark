@@ -15,13 +15,17 @@ import { BorderAllSharp, Padding } from "@mui/icons-material";
 import Divider from '@mui/material/Divider';
 
 {/* Function Imports*/}
-import first_drawing from "/src/app/img/first.png"
-import second_drawing from "/src/app/img/second.png"
-import third_drawing from "/src/app/img/third.png"
-import fourth_drawing from "/src/app/img/fourth.png"
-import fifth_drawing from "/src/app/img/fifth.png"
-import sixth_drawing from "/src/app/img/sixth.png"
-import seventh_drawing from "/src/app/img/seventh.png"
+import prisoner_boy from "/src/app/img/prisoner_boy.png"
+import fates_grip from "/src/app/img/fates_grip.png"
+import samurai from "/src/app/img/samurai.png"
+import the_look from "/src/app/img/the_look.png"
+import young_italy from "/src/app/img/young_italy.png"
+import prettiest_girl from "/src/app/img/prettiest_girl.png"
+import inspo_by_mikalikesrain from "/src/app/img/inspo_by_mikalikesrain.png"
+import elf_nora from "/src/app/img/elf_nora.png"
+import judging_eyes from "/src/app/img/judging_eyes.png"
+import tartarus from "/src/app/img/tartarus.png"
+import death_of_the_pharaoh from "/src/app/img/death_of_the_pharaoh.png"
 
 import pattern1 from "/src/app/assets/111.avif"
 import pattern2 from "/src/app/assets/555.jpg"
@@ -256,9 +260,7 @@ export default function Home() {
                 <p>ReactJS</p>
               </div>
 
-              <div className={styles.project_links}>
-                <a href="https://www.canva.com/design/DAFC-AICFmk/iNRwH7Y5dZ84vgsd7hp9UQ/view">View Doc</a>
-              </div>
+              <a className={styles.project_links} href="https://www.canva.com/design/DAFC-AICFmk/iNRwH7Y5dZ84vgsd7hp9UQ/view">View Doc</a>
             </div>
 
           </div>
@@ -282,9 +284,7 @@ export default function Home() {
                 <p>SQL</p>
               </div>
 
-              <div className={styles.project_links}>
-                <a href="docs.google.com/presentation/d/1vxBDzPVCE1g1hheTncPaOFOFPcSsbcfyIIzE3Ko3dHQ">View Doc</a>
-              </div>
+              <a className={styles.project_links} href="docs.google.com/presentation/d/1vxBDzPVCE1g1hheTncPaOFOFPcSsbcfyIIzE3Ko3dHQ">View Doc</a>
             </div>
           </div>
           <div className={styles.project_c}>
@@ -307,9 +307,7 @@ export default function Home() {
                 <p>Mesa</p>
               </div>
 
-              <div className={styles.project_links}>
-                <a href="https://github.com/grchristian/movilidad-urbana">Github Repo</a>
-              </div>
+              <a className={styles.project_links} href="https://github.com/grchristian/movilidad-urbana">Github Repo</a>
             </div>
           </div>
           <div className={styles.project_d}>
@@ -333,9 +331,7 @@ export default function Home() {
                 <p>NLTK</p>
               </div>
 
-              <div className={styles.project_links}>
-                <a href="https://docs.google.com/document/d/1MFH38nQ5xG5OHCYjKd0BxZkVB76p-qiI/">View Doc</a>
-              </div>
+              <a className={styles.project_links} href="https://docs.google.com/document/d/1MFH38nQ5xG5OHCYjKd0BxZkVB76p-qiI/">View Doc</a>
             </div>
           </div>
         </div>
@@ -350,8 +346,61 @@ export default function Home() {
         </div>
 
         <div className={styles.drawings}>
+        <div className={styles.drawing}>
+            <Image src={death_of_the_pharaoh} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
+            <div className={styles.info}>
+              <div className={styles.info_text}>
+                <h1>&quot;Death of the Pharaoh&quot;</h1>
+                <div className={styles.info_type}>
+                  <p>Photo</p>
+                </div>
+              </div>
+
+              <p className={styles.info_date}>Apr 16, 2024</p>
+            </div>
+          </div>
           <div className={styles.drawing}>
-            <Image src={second_drawing} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
+            <Image src={tartarus} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
+            <div className={styles.info}>
+              <div className={styles.info_text}>
+                <h1>&quot;Tartarus&quot;</h1>
+                <div className={styles.info_type}>
+                  <p>Photo</p>
+                </div>
+              </div>
+
+              <p className={styles.info_date}>Apr 09, 2024</p>
+            </div>
+          </div>
+          <div className={styles.drawing}>
+            <Image src={elf_nora} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
+            <div className={styles.info}>
+              <div className={styles.info_text}>
+                <h1>&quot;Elf Nora&quot;</h1>
+                <div className={styles.info_type}>
+                  <p>Photo</p>
+                </div>
+              </div>
+
+              <p className={styles.info_date}>Feb 27, 2024</p>
+            </div>
+          </div>
+          <div className={styles.drawing}>
+            <Image src={judging_eyes} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
+            <div className={styles.info}>
+              <div className={styles.info_text}>
+                <h1>&quot;Judging Eyes&quot;</h1>
+                <div className={styles.info_type}>
+                  <p>Photo</p>
+                </div>
+              </div>
+
+              <p className={styles.info_date}>Feb 23, 2024</p>
+            </div>
+          </div>
+
+          <div className={styles.drawing}>
+            <Image src={fates_grip} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
             <div className={styles.info}>
               <div className={styles.info_text}>
                 <h1>&quot;Fate&apos;s Grip&quot;</h1>
@@ -365,7 +414,7 @@ export default function Home() {
           </div>
 
           <div className={styles.drawing}>
-            <Image src={third_drawing} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
+            <Image src={samurai} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
             <div className={styles.info}>
               <div className={styles.info_text}>
                 <h1>&quot;Samurai&quot;</h1>
@@ -379,7 +428,21 @@ export default function Home() {
           </div>
 
           <div className={styles.drawing}>
-            <Image src={first_drawing} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
+            <Image src={prettiest_girl} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
+            <div className={styles.info}>
+              <div className={styles.info_text}>
+                <h1>&quot;Prettiest Girl&quot;</h1>
+                <div className={styles.info_type}>
+                  <p>Photo</p>
+                </div>
+              </div>
+
+              <p className={styles.info_date}>Dec 27, 2023</p>
+            </div>
+          </div>
+
+          <div className={styles.drawing}>
+            <Image src={prisoner_boy} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
             <div className={styles.info}>
               <div className={styles.info_text}>
                 <h1>&quot;Prisoner&quot;</h1>
@@ -393,7 +456,21 @@ export default function Home() {
           </div>
 
           <div className={styles.drawing}>
-            <Image src={fifth_drawing} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
+            <Image src={inspo_by_mikalikesrain} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
+            <div className={styles.info}>
+              <div className={styles.info_text}>
+                <h1>&quot;inspo_by_mikalikesrain&quot;</h1>
+                <div className={styles.info_type}>
+                  <p>Photo</p>
+                </div>
+              </div>
+
+              <p className={styles.info_date}>Dec 10, 2023</p>
+            </div>
+          </div>
+
+          <div className={styles.drawing}>
+            <Image src={young_italy} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
             <div className={styles.info}>
               <div className={styles.info_text}>
                 <h1>&quot;Young Italy&quot;</h1>
@@ -407,30 +484,16 @@ export default function Home() {
           </div>
 
           <div className={styles.drawing}>
-            <Image src={sixth_drawing} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
+            <Image src={the_look} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
             <div className={styles.info}>
               <div className={styles.info_text}>
-                <h1>&quot;&quot;</h1>
+                <h1>&quot;The Look&quot;</h1>
                 <div className={styles.info_type}>
                   <p>Photo</p>
                 </div>
               </div>
 
-              <p className={styles.info_date}>2023</p>
-            </div>
-          </div>
-
-          <div className={styles.drawing}>
-            <Image src={seventh_drawing} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
-            <div className={styles.info}>
-              <div className={styles.info_text}>
-                <h1>&quot;&quot;</h1>
-                <div className={styles.info_type}>
-                  <p>Photo</p>
-                </div>
-              </div>
-
-              <p className={styles.info_date}>2023</p>
+              <p className={styles.info_date}>Sep 20, 2023</p>
             </div>
           </div>
           
@@ -440,10 +503,13 @@ export default function Home() {
       {/* Illustrations Section */}
       <Link href="/contact">
         <div className={styles.contact} id="contact">
-          <h2>CONTACT</h2>
-          <h1 className={styles.side_title}>LET&apos;S TALK!</h1>
-          <h1>LET&apos;S TALK!</h1>
-          <h1 className={styles.side_title}>LET&apos;S TALK!</h1>
+          <div>
+            <h2>CONTACT</h2>
+            <h1 className={styles.side_title}>LET&apos;S TALK!</h1>
+            <h1>LET&apos;S TALK!</h1>
+            <h1 className={styles.side_title}>LET&apos;S TALK!</h1>
+          </div>
+          <div>
           <ul className={styles.circles}>
             <li></li>
             <li></li>
@@ -456,6 +522,7 @@ export default function Home() {
             <li></li>
             <li></li>
             </ul>
+          </div>
         </div>
       </Link>
 

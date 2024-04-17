@@ -32,7 +32,7 @@ export default function NavBar() {
 
     const openMenu = contextSafe(() => {
         setMenuOpen(!menuOpen)
-        gsap.fromTo('.background-color, .menu-items, .social-links', {
+        gsap.fromTo('.background-color, .menu-items, .socials', {
             x: 3000,
             opacity: 0,
             duration: 0.5,
@@ -46,7 +46,7 @@ export default function NavBar() {
     })
 
     const closeMenu = contextSafe(() => {
-        gsap.fromTo('.background-color, .menu-items, .social-links', {
+        gsap.fromTo('.background-color, .menu-items, .socials', {
             x: 0,
             opacity: 1,
             duration: 0.5,
@@ -71,6 +71,9 @@ export default function NavBar() {
                         margin-right: ${menuOpen ? '10px' : '0px'};
                     }
                     .menu-items, .social-links {
+                        display: ${menuOpen ? 'visible' : 'none'};
+                    }
+                    .socials {
                         display: ${menuOpen ? 'visible' : 'none'};
                     }
                     .background-color {
@@ -104,14 +107,14 @@ export default function NavBar() {
                     <a onClick={() => scrollOnClick(2780)}>Projects</a>
 
                     <a onClick={() => scrollOnClick(3700)}>Art</a>
+
+                    <Link href="../contact">Contact</Link>
                 </div>
 
-                <div className="social-links">
-                    <ul className="links-list">
-                        <li className="social-link"><a href="https://www.instagram.com/marcobglz/" target="_blank"><InstagramIcon style={{fontSize: 40}}/></a></li>
-                        <li className="social-link"><a href="https://github.com/MarcoBosglez/" target="_blank"><GitHubIcon style={{fontSize: 40}}/></a></li>
-                        <li className="social-link"><a href="https://www.linkedin.com/in/marco-bosquez-5580271a1//" target="_blank"><LinkedInIcon style={{fontSize: 40}}/></a></li>
-                    </ul>
+                <div className="socials">
+                    <a href="https://www.instagram.com/marcobglz/" target="_blank"><InstagramIcon style={{fontSize: 40}}/></a>
+                    <a href="https://github.com/MarcoBosglez/" target="_blank"><GitHubIcon style={{fontSize: 40}}/></a>
+                    <a href="https://www.linkedin.com/in/marco-bosquez-5580271a1//" target="_blank"><LinkedInIcon style={{fontSize: 40}}/></a>
                 </div>
             </nav>
         </div>
