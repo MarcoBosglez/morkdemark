@@ -423,7 +423,7 @@
   background-size: 300% 100%;
   border-radius: 5px;
   background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
-  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
   cursor: pointer;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
@@ -562,7 +562,7 @@
   height: 20px;
   background: #13151d5b;
   animation: animate 12s linear infinite;
-  bottom: -150px;
+  bottom: 0px;
   z-index: 0;
   
 }

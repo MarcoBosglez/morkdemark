@@ -260,7 +260,7 @@ export default function Home() {
                 <p>ReactJS</p>
               </div>
 
-              <a className={styles.project_links} href="https://www.canva.com/design/DAFC-AICFmk/iNRwH7Y5dZ84vgsd7hp9UQ/view">View Doc</a>
+              <a className={styles.project_links} id="amazonrsh" href="https://www.canva.com/design/DAFC-AICFmk/iNRwH7Y5dZ84vgsd7hp9UQ/view">View Doc</a>
             </div>
 
           </div>
@@ -284,7 +284,7 @@ export default function Home() {
                 <p>SQL</p>
               </div>
 
-              <a className={styles.project_links} href="docs.google.com/presentation/d/1vxBDzPVCE1g1hheTncPaOFOFPcSsbcfyIIzE3Ko3dHQ">View Doc</a>
+              <a className={styles.project_links} id="iotproject" href="docs.google.com/presentation/d/1vxBDzPVCE1g1hheTncPaOFOFPcSsbcfyIIzE3Ko3dHQ">View Doc</a>
             </div>
           </div>
           <div className={styles.project_c}>
@@ -307,7 +307,7 @@ export default function Home() {
                 <p>Mesa</p>
               </div>
 
-              <a className={styles.project_links} href="https://github.com/grchristian/movilidad-urbana">Github Repo</a>
+              <a className={styles.project_links} id="aiproject" href="https://github.com/grchristian/movilidad-urbana">Github Repo</a>
             </div>
           </div>
           <div className={styles.project_d}>
@@ -331,7 +331,7 @@ export default function Home() {
                 <p>NLTK</p>
               </div>
 
-              <a className={styles.project_links} href="https://docs.google.com/document/d/1MFH38nQ5xG5OHCYjKd0BxZkVB76p-qiI/">View Doc</a>
+              <a className={styles.project_links} id="mlproject" href="https://docs.google.com/document/d/1MFH38nQ5xG5OHCYjKd0BxZkVB76p-qiI/">View Doc</a>
             </div>
           </div>
         </div>

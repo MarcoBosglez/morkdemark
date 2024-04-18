@@ -32,7 +32,7 @@ export default function NavBar() {
 
     const openMenu = contextSafe(() => {
         setMenuOpen(!menuOpen)
-        gsap.fromTo('.background-color, .menu-items, .socials', {
+        gsap.fromTo('.background-color, .menu-items, .socials-bar', {
             x: 3000,
             opacity: 0,
             duration: 0.5,
@@ -46,7 +46,7 @@ export default function NavBar() {
     })
 
     const closeMenu = contextSafe(() => {
-        gsap.fromTo('.background-color, .menu-items, .socials', {
+        gsap.fromTo('.background-color, .menu-items, .socials-bar', {
             x: 0,
             opacity: 1,
             duration: 0.5,
@@ -73,7 +73,7 @@ export default function NavBar() {
                     .menu-items, .social-links {
                         display: ${menuOpen ? 'visible' : 'none'};
                     }
-                    .socials {
+                    .socials-bar {
                         display: ${menuOpen ? 'visible' : 'none'};
                     }
                     .background-color {
@@ -111,7 +111,7 @@ export default function NavBar() {
                     <Link href="../contact">Contact</Link>
                 </div>
 
-                <div className="socials">
+                <div className="socials-bar">
                     <a href="https://www.instagram.com/marcobglz/" target="_blank"><InstagramIcon style={{fontSize: 40}}/></a>
                     <a href="https://github.com/MarcoBosglez/" target="_blank"><GitHubIcon style={{fontSize: 40}}/></a>
                     <a href="https://www.linkedin.com/in/marco-bosquez-5580271a1//" target="_blank"><LinkedInIcon style={{fontSize: 40}}/></a>
