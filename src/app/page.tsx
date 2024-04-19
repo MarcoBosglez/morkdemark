@@ -30,6 +30,20 @@ import death_of_the_pharaoh from "/src/app/img/death_of_the_pharaoh.png"
 import pattern1 from "/src/app/assets/111.avif"
 import pattern2 from "/src/app/assets/555.jpg"
 
+import slider_pic_1 from "/src/app/img/slider_pics_1.jpeg"
+import slider_pic_2 from "/src/app/img/slider_pics (2).jpeg"
+import slider_pic_3 from "/src/app/img/slider_pics (3).jpeg"
+import slider_pic_4 from "/src/app/img/slider_pics (4).jpeg"
+import slider_pic_5 from "/src/app/img/slider_pics (5).jpeg"
+import slider_pic_6 from "/src/app/img/slider_pics (6).jpeg"
+import slider_pic_7 from "/src/app/img/slider_pics (7).jpeg"
+import slider_pic_8 from "/src/app/img/slider_pics (8).jpeg"
+import slider_pic_9 from "/src/app/img/slider_pics (9).jpeg"
+import slider_pic_10 from "/src/app/img/slider_pics (10).jpeg"
+import slider_pic_11 from "/src/app/img/slider_pics (11).jpeg"
+import slider_pic_12 from "/src/app/img/slider_pics (12).jpeg"
+import noise from "/src/app/img/noise.png"
+
 import BachelorsDegree from "/src/app/img/bachelorsdegree.jpg"
 import TecIcon from "/src/app/img/TecLogo.png"
 import ScaleIcon from "/src/app/img/ScaleLogo.png"
@@ -70,6 +84,11 @@ export default function Home() {
 
         {/* About and Photo*/}
         <div className={styles.about}>
+
+          {/* Photo */}
+          <div className={styles.hero_image}>
+          </div>
+
           {/* About */}
           <div className={styles.hero_text}>
             <div className={styles.hero_title}>
@@ -77,70 +96,62 @@ export default function Home() {
             </div>
 
             <div className={styles.hero_info}>
-              <p>Hello, I am a 22 year old {" "}
+              <div className={styles.introduction}> 
+                <p>Hi! I'm Marco, a 23 year old&nbsp;</p>
                 <ReactTyped className={styles.typewriter}
-                  strings={['Artist', 'Developer', 'Engineer']} 
+                  strings={['Artist.', 'Developer.', 'Engineer.']} 
                   typeSpeed={100} 
                   loop
                   backSpeed={35}
                   showCursor={true}
                 /> 
-                based in
-              </p>
-              <p>Mexico City with a love for technology, digital illustrations, and martial arts.</p>
-              <a href="https://www.instagram.com/marcobglz/" target="_blank"><InstagramIcon/></a>
-              <a href="https://github.com/MarcoBosglez/" target="_blank"><GitHubIcon/></a>
-              <a href="https://www.linkedin.com/in/marco-bosquez-5580271a1//" target="_blank"><LinkedInIcon/></a>
+              </div>
+              <div>
+                <a href="https://www.instagram.com/marcobglz/" target="_blank"><InstagramIcon/></a>
+                <a href="https://github.com/MarcoBosglez/" target="_blank"><GitHubIcon/></a>
+                <a href="https://www.linkedin.com/in/marco-bosquez-5580271a1//" target="_blank"><LinkedInIcon/></a>
+              </div>
             </div>      
           </div>
 
-          {/* Photo */}
-          <div className={styles.hero_image}>
-            <div className={styles.hero_image_src}></div>
-          </div>
-
-          
         </div>
       </div>
 
+
       {/* Image Slider Section*/}
       <div className={styles.slider}>
+        
         <div className={styles.slide}>
-          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={pattern2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={pattern2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={pattern2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={slider_pic_1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={slider_pic_2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={slider_pic_3} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={slider_pic_4} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={slider_pic_5} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={slider_pic_6} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={slider_pic_7} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={slider_pic_8} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={slider_pic_9} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={slider_pic_10} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={slider_pic_11} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={slider_pic_12} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
         </div>
         <div className={styles.slide}>
-          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={pattern2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={pattern2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={pattern2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={slider_pic_1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={slider_pic_2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={slider_pic_3} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={slider_pic_4} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={slider_pic_5} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={slider_pic_6} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={slider_pic_7} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={slider_pic_8} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={slider_pic_9} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={slider_pic_10} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={slider_pic_11} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+          <Image src={slider_pic_12} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
         </div>
-        <div className={styles.slide}>
-          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={pattern2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={pattern2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={pattern2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-        </div>
-        <div className={styles.slide}>
-          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={pattern2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={pattern2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={pattern2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={pattern1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-        </div>
+
+        {/* <div className={styles.noise_slider}>
+        </div>*/}
       </div>
       
       {/* Services Section*/}
