@@ -159,19 +159,19 @@ export default function Home() {
         <h2>SKILLS</h2>
 
         <div className={styles.service_title}>
-          <div style={{borderRadius: 35, backgroundColor: 'black', width: 150, height:90}}><div className={styles.background_text_alt}>5Y</div></div>
+          <div style={{backgroundColor: 'rgb(240, 166, 81)'}}><div className={styles.background_text_alt}>5Y</div></div>
           <h1>C++ PYTHON</h1>
         </div>
         <div className={styles.service_title}>
-          <div style={{borderRadius: 35, backgroundColor: 'white', width: 150,  height:90}}><div className={styles.background_text}>3Y</div></div>
+          <div style={{backgroundColor: 'rgb(216, 84, 84)'}}><div className={styles.background_text}>3Y</div></div>
           <h1>JAVA C# JS</h1>
         </div>
         <div className={styles.service_title}>
-          <div style={{borderRadius: 35, backgroundColor: 'black', width: 150,  height:90}}><div className={styles.background_text_alt}>2Y</div></div>
+          <div style={{backgroundColor: 'rgb(240, 166, 81)'}}><div className={styles.background_text_alt}>2Y</div></div>
           <h1>REACT NODE</h1>
         </div>
         <div className={styles.service_title}>
-          <div style={{borderRadius: 35, backgroundColor: 'white', width: 150,  height:90}}><div className={styles.background_text}>1Y</div></div>
+          <div style={{backgroundColor: 'rgb(216, 84, 84)'}}><div className={styles.background_text}>1Y</div></div>
           <h1>UX/UI</h1>
         </div>
       </div>
@@ -181,7 +181,7 @@ export default function Home() {
         <h1>EXPERIENCE</h1>
         <div className={styles.experience_holder}>
           <div className={styles.jobs_holder}>
-            <div className={styles.card_holder} id="#scaleai" style={{backgroundColor: 'rgb(240, 166, 81)', color: 'black'}}>
+            <div className={styles.card_holder} id="#scaleai" style={{backgroundColor: 'black'}}>
               <div className={styles.job_organization}>
                 <Image src={ScaleIcon} style={{ width: 100, height: 100, borderRadius: 30}} alt={""}></Image>
                 <div>
@@ -203,7 +203,7 @@ export default function Home() {
               </div>
 
             </div>
-            <div className={styles.card_holder} id="#nds" style={{backgroundColor: 'rgb(216, 84, 84)'}}>
+            <div className={styles.card_holder} id="#nds" style={{backgroundColor: 'white', color: 'black'}}>
               <div className={styles.job_organization}>
                 <Image src={NDSIcon} style={{ width: 100, height: 100, borderRadius: 30}} alt={""}></Image>
                 <div>
@@ -216,13 +216,13 @@ export default function Home() {
               </p>
 
               <div className={styles.project_technologies}>
-                  <p>MongoDB</p>
-                  <p>ReactJS</p>
-                  <p>IBM Watson</p>
-                  <p>Axios</p>
-                  <p>APIs</p>
-                  <p>ChatBots</p>
-                  <p>AI</p>
+                  <p style={{backgroundColor: 'black', color: 'white'}}>MongoDB</p>
+                  <p style={{backgroundColor: 'black', color: 'white'}}>ReactJS</p>
+                  <p style={{backgroundColor: 'black', color: 'white'}}>IBM Watson</p>
+                  <p style={{backgroundColor: 'black', color: 'white'}}>Axios</p>
+                  <p style={{backgroundColor: 'black', color: 'white'}}>APIs</p>
+                  <p style={{backgroundColor: 'black', color: 'white'}}>ChatBots</p>
+                  <p style={{backgroundColor: 'black', color: 'white'}}>AI</p>
               </div>
 
             </div>
@@ -358,7 +358,7 @@ export default function Home() {
 
         <div className={styles.drawings}>
           <div className={styles.drawing}>
-            <Image src={death_of_the_pharaoh} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
+            <Image src={death_of_the_pharaoh} alt="placeholder1"/>
             <div className={styles.info}>
               <div className={styles.info_text}>
                 <h1>&quot;Death of the Pharaoh&quot;</h1>
@@ -371,7 +371,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.drawing}>
-            <Image src={tartarus} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
+            <Image src={tartarus} alt="placeholder1"/>
             <div className={styles.info}>
               <div className={styles.info_text}>
                 <h1>&quot;Tartarus&quot;</h1>
@@ -384,7 +384,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.drawing}>
-            <Image src={elf_nora} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
+            <Image src={elf_nora} alt="placeholder1"/>
             <div className={styles.info}>
               <div className={styles.info_text}>
                 <h1>&quot;Elf Nora&quot;</h1>
@@ -397,7 +397,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.drawing}>
-            <Image src={judging_eyes} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
+            <Image src={judging_eyes} alt="placeholder1"/>
             <div className={styles.info}>
               <div className={styles.info_text}>
                 <h1>&quot;Judging Eyes&quot;</h1>
@@ -411,7 +411,7 @@ export default function Home() {
           </div>
 
           <div className={styles.drawing}>
-            <Image src={fates_grip} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
+            <Image src={fates_grip} alt="placeholder1"/>
             <div className={styles.info}>
               <div className={styles.info_text}>
                 <h1>&quot;Fate&apos;s Grip&quot;</h1>
@@ -425,7 +425,7 @@ export default function Home() {
           </div>
 
           <div className={styles.drawing}>
-            <Image src={samurai} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
+            <Image src={samurai} alt="placeholder1"/>
             <div className={styles.info}>
               <div className={styles.info_text}>
                 <h1>&quot;Samurai&quot;</h1>
@@ -439,7 +439,7 @@ export default function Home() {
           </div>
 
           <div className={styles.drawing}>
-            <Image src={prettiest_girl} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
+            <Image src={prettiest_girl} alt="placeholder1"/>
             <div className={styles.info}>
               <div className={styles.info_text}>
                 <h1>&quot;Prettiest Girl&quot;</h1>
@@ -453,7 +453,7 @@ export default function Home() {
           </div>
 
           <div className={styles.drawing}>
-            <Image src={prisoner_boy} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
+            <Image src={prisoner_boy} alt="placeholder1"/>
             <div className={styles.info}>
               <div className={styles.info_text}>
                 <h1>&quot;Prisoner&quot;</h1>
@@ -467,10 +467,10 @@ export default function Home() {
           </div>
 
           <div className={styles.drawing}>
-            <Image src={inspo_by_mikalikesrain} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
+            <Image src={inspo_by_mikalikesrain} alt="placeholder1"/>
             <div className={styles.info}>
               <div className={styles.info_text}>
-                <h1>&quot;inspo_by_mikalikesrain&quot;</h1>
+                <h1>&quot;inspo from @mikalikesrain&quot;</h1>
                 <div className={styles.info_type}>
                   <p>Photo</p>
                 </div>
@@ -481,7 +481,7 @@ export default function Home() {
           </div>
 
           <div className={styles.drawing}>
-            <Image src={young_italy} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
+            <Image src={young_italy} alt="placeholder1"/>
             <div className={styles.info}>
               <div className={styles.info_text}>
                 <h1>&quot;Young Italy&quot;</h1>
@@ -495,7 +495,7 @@ export default function Home() {
           </div>
 
           <div className={styles.drawing}>
-            <Image src={the_look} width={550} height={550} style={{padding: 8}} alt="placeholder1"/>
+            <Image src={the_look} alt="placeholder1"/>
             <div className={styles.info}>
               <div className={styles.info_text}>
                 <h1>&quot;The Look&quot;</h1>
@@ -520,24 +520,8 @@ export default function Home() {
             <h1>LET&apos;S TALK!</h1>
             <h1 className={styles.side_title}>LET&apos;S TALK!</h1>
           </div>
-          <div>
-          <ul className={styles.circles}>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            </ul>
-          </div>
         </div>
       </Link>
-
-      {/* <div className='inner-cursor'></div> */}
 
     </main>
   );
