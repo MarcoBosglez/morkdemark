@@ -58,7 +58,7 @@ body {
 }
 
 .background-color {
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   top: 0;
   width: 100%;
@@ -100,7 +100,7 @@ body {
 }
 
 .nav {
-  z-index: 1;
+  z-index: 3;
   position: fixed;
   top: 0;
   width: 100%;
@@ -115,11 +115,14 @@ body {
   font-size: 20px;
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  mix-blend-mode: difference;
 }
 
-.navbar h1, .made_by_me a, .back_to_top a{
+.navbar .logo div, .navbar .logo_change div {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.navbar .logo div, .navbar .logo_change div, .made_by_me a, .back_to_top a{
   background: linear-gradient(currentColor 0 0) 
     bottom left/
     var(--underline-width, 0%) 0.1em
@@ -127,7 +130,7 @@ body {
   transition: background-size 0.3s;
 }
 
-.navbar h1:hover, .made_by_me a:hover, .back_to_top a:hover {
+.navbar .logo a:hover, .navbar .logo_change a:hover, .made_by_me a:hover, .back_to_top a:hover {
   --underline-width: 100%;
 }
 
@@ -281,9 +284,6 @@ a {
   justify-content: center;
   gap: 10px;
   padding: 5px;
-}
-
-.socials a, .socials-bar{
   transition: all .2s ease-in-out;
 }
 
@@ -301,9 +301,8 @@ a {
 @media only screen and (max-width: 600px) {
   .menu-items {
     font-family: 'Chillax-Medium' !important;
-    font-size: 55px;
-    line-height: 65px;
-    padding: 8rem;
+    font-size: 50px;
+    line-height: 55px;
   }
 
   .made_by {
@@ -319,11 +318,11 @@ a {
   }
   
   .made_by_me > p {
-    font-size: 15px;
+    font-size: 25px;
   }
 
   .back_to_top > a {
-    font-size: 15px;
+    font-size: 25px;
     color: #fff;
     transition: 0.2s;
   }

@@ -4,6 +4,7 @@ import { ReactTyped } from "react-typed";
 import Image from "next/image";
 import Link from 'next/link';
 import NavBar from "./navbar"
+import React, { useRef } from "react";
 
 {/* MaterialUI Imports*/}
 import MenuIcon from '@mui/icons-material/Menu';
@@ -13,6 +14,10 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MouseIcon from '@mui/icons-material/Mouse';
 import { BorderAllSharp, Padding } from "@mui/icons-material";
 import Divider from '@mui/material/Divider';
+
+import { Canvas, useFrame } from "@react-three/fiber";
+import { OrbitControls, Sphere } from "@react-three/drei";
+import { pointsInner, pointsOuter } from "./utils";
 
 {/* Art Imports*/}
 import prisoner_boy from "/src/app/img/prisoner_boy.png"
@@ -48,7 +53,6 @@ import BachelorsDegree from "/src/app/img/bachelorsdegree.jpg"
 import TecIcon from "/src/app/img/TecLogo.png"
 import ScaleIcon from "/src/app/img/ScaleLogo.png"
 import NDSIcon from "/src/app/img/NDSLogo.png"
-import React from "react";
 
 const ColoredLine = ( color: any ) => (
   <hr
@@ -60,18 +64,39 @@ const ColoredLine = ( color: any ) => (
   />
 );
 
+const PointCircle = () => {
+  const ref = useRef(null);
 
-/*
-let innerCursor = document.querySelector<HTMLElement>('.inner-cursor');
+  useFrame(({ clock }) => {
+    if (ref.current?.rotation) {
+      ref.current.rotation.z = clock.getElapsedTime() * 0.05;
+    }
+  });
 
-document.addEventListener('mousemove', moveCursor);
-function moveCursor(e) {
-  let x = e.clientX;
-  let y = e.clientY;
+  return (
+    <group ref={ref}>
+      {pointsInner.map((point) => (
+        <Point key={point.idx} position={point.position} color={point.color} />
+      ))}
+      {pointsOuter.map((point) => (
+        <Point key={point.idx} position={point.position} color={point.color} />
+      ))}
+    </group>
+  );
+};
 
-  innerCursor.style.left = `${x}px`;
-  innerCursor.style.top = `${y}px`;
-}*/
+const Point = ({ position, color }) => {
+  return (
+    <Sphere position={position} args={[0.1, 10, 10]}>
+      <meshStandardMaterial
+        emissive={color}
+        emissiveIntensity={0.5}
+        roughness={0.5}
+        color={color}
+      />
+    </Sphere>
+  );
+};
 
 export default function Home() {
   return (
@@ -115,43 +140,20 @@ export default function Home() {
           </div>
 
         </div>
-      </div>
 
-
-      {/* Image Slider Section*/}
-      <div className={styles.slider}>
-        
-        <div className={styles.slide}>
-          <Image src={slider_pic_1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={slider_pic_2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={slider_pic_3} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={slider_pic_4} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={slider_pic_5} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={slider_pic_6} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={slider_pic_7} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={slider_pic_8} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={slider_pic_9} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={slider_pic_10} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={slider_pic_11} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={slider_pic_12} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
+        <div className={styles.hero_background}>
+          <Canvas
+            camera={{
+              position: [8, -7.5, -5],
+            }}
+            style={{ height: "100vh" }}
+          >
+            <OrbitControls maxDistance={50} minDistance={1} enableZoom={false}/>
+            <directionalLight />
+            <pointLight position={[-30, 0, -30]} power={10.0} />
+            <PointCircle />
+          </Canvas>
         </div>
-        <div className={styles.slide}>
-          <Image src={slider_pic_1} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={slider_pic_2} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={slider_pic_3} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={slider_pic_4} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={slider_pic_5} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={slider_pic_6} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={slider_pic_7} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={slider_pic_8} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={slider_pic_9} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={slider_pic_10} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={slider_pic_11} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-          <Image src={slider_pic_12} width={280} height={280} style={{borderRadius: 45, padding: 8}} alt="placeholder1"/>
-        </div>
-
-        {/* <div className={styles.noise_slider}>
-        </div>*/}
       </div>
       
       {/* Services Section*/}
@@ -183,7 +185,7 @@ export default function Home() {
           <div className={styles.jobs_holder}>
             <div className={styles.card_holder} id="#scaleai" style={{backgroundColor: 'black'}}>
               <div className={styles.job_organization}>
-                <Image src={ScaleIcon} style={{ width: 100, height: 100, borderRadius: 30}} alt={""}></Image>
+                <Image src={ScaleIcon} alt={""}></Image>
                 <div>
                   <h2>Scale AI</h2>
                   <p>Jr Developer | Jun 2022 - Feb 2024</p>
@@ -203,11 +205,11 @@ export default function Home() {
               </div>
 
             </div>
-            <div className={styles.card_holder} id="#nds" style={{backgroundColor: 'white', color: 'black'}}>
+            <div className={styles.card_holder} id="#nds" style={{backgroundColor: 'aliceblue', color: 'black'}}>
               <div className={styles.job_organization}>
-                <Image src={NDSIcon} style={{ width: 100, height: 100, borderRadius: 30}} alt={""}></Image>
+                <Image src={NDSIcon} alt={""}></Image>
                 <div>
-                  <h2>NDS Cognitive Labs</h2>
+                  <h2>NDS</h2>
                   <p>Intern | Aug 2022 - Dec 2024</p>
                 </div>
               </div>
@@ -232,7 +234,7 @@ export default function Home() {
             <div className={styles.card_holder} id="#tec" style={{backgroundColor: 'black'}}>
               <Image src={BachelorsDegree} alt={""}></Image>
               <div className={styles.school_organization}>
-                <Image src={TecIcon} style={{ width: 100, height: 100, borderRadius: 40}} alt={""}></Image>
+                <Image src={TecIcon} alt={""}></Image>
                 <div>
                   <h2>Tecnologico de Monterrey</h2>
                   <p>Bachelor of Science in Computer Engineering</p>
@@ -350,11 +352,11 @@ export default function Home() {
 
       {/* Illustrations Section*/}
       <div className={styles.illustrations} id="illustrations">
-        <ColoredLine color="white"/>
         <div className={styles.top}>
-          <h1>Illustrations</h1>
-          <Link href="/illustrations">View All</Link>
+          <Link href="/illustrations"><h1>Illustrations</h1></Link>
         </div>
+
+        <ColoredLine color="white"/>
 
         <div className={styles.drawings}>
           <div className={styles.drawing}>

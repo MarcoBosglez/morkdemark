@@ -25,7 +25,7 @@ export default function NavBar() {
     const { contextSafe } = useGSAP({ scope: container })
 
     const scrollOnClick = contextSafe((section: any) => {
-        gsap.to(window, { duration: 1, scrollTo:{ y: section, offsetY: 50 }})
+        gsap.to(window, { duration: 1, scrollTo:{ y: section }})
         setMenuOpen(!menuOpen)
         closeMenu()
     })
@@ -91,22 +91,22 @@ export default function NavBar() {
             <nav className="nav">
                 <div className="navbar" style={{padding: 25}}>
                     <div>
-                        <Link className="logo" href="#"><h1>mork<a style={{color: 'orange'}}>demark</a></h1></Link>
-                        <Link className="logo_change" href="#"><h1>m0rk<a style={{color: 'orange'}}>d3m4rk</a></h1></Link>
+                        <Link className="logo" href="#"><div>mork<a style={{color: 'orange'}}>demark</a></div></Link>
+                        <Link className="logo_change" href="#"><div>m0rk<a style={{color: 'orange'}}>d3m4rk</a></div></Link>
                     </div>
                     <a className="menu" onClick={() => menuOpen === false ? openMenu() : closeMenu()}>{ menuOpen === false ? <MenuIcon style={{fontSize: 40}}/> : <CloseIcon style={{fontSize: 40}}/>}</a>
                 </div>
 
                 <div className="menu-items">
-                    <a onClick={() => scrollOnClick(0)}>Home</a>
+                    <a onClick={() => scrollOnClick('#home')}>Home</a>
 
-                    <a onClick={() => scrollOnClick(850)}>Skills</a>
+                    <a onClick={() => scrollOnClick('#services')}>Skills</a>
 
-                    <a onClick={() => scrollOnClick(1750)}>Experience</a>
+                    <a onClick={() => scrollOnClick('#experience')}>Experience</a>
 
-                    <a onClick={() => scrollOnClick(2780)}>Projects</a>
+                    <a onClick={() => scrollOnClick('#projects')}>Projects</a>
 
-                    <a onClick={() => scrollOnClick(3700)}>Art</a>
+                    <a onClick={() => scrollOnClick('#illustrations')}>Art</a>
 
                     <Link href="../contact">Contact</Link>
                 </div>

@@ -67,7 +67,7 @@ export default function BackBar() {
                     .menu {
                         margin-right: ${menuOpen ? '10px' : '0px'};
                     }
-                    .menu-items, .social-links  {
+                    .menu-items, .socials-bar  {
                         display: ${menuOpen ? 'visible' : 'none'};
                     }
                     .background-color {
@@ -103,12 +103,10 @@ export default function BackBar() {
                     <Link href="../illustrations">Art</Link>
                 </div>
 
-                <div className="social-links">
-                    <ul className="links-list">
-                        <li className="social-link"><a href="https://www.instagram.com/marcobglz/" target="_blank"><InstagramIcon/></a></li>
-                        <li className="social-link"><a href="https://github.com/MarcoBosglez/" target="_blank"><GitHubIcon/></a></li>
-                        <li className="social-link"><a href="https://www.linkedin.com/in/marco-bosquez-5580271a1//" target="_blank"><LinkedInIcon/></a></li>
-                    </ul>
+                <div className="socials-bar">
+                    <a href="https://www.instagram.com/marcobglz/" target="_blank"><InstagramIcon/></a>
+                    <a href="https://github.com/MarcoBosglez/" target="_blank"><GitHubIcon/></a>
+                    <a href="https://www.linkedin.com/in/marco-bosquez-5580271a1//" target="_blank"><LinkedInIcon/></a>
                 </div>
             </nav>
         </div>
