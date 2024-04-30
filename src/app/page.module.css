@@ -4,6 +4,7 @@
 
 .home {
   background-color: #13151d;
+  -webkit-mask-image: linear-gradient(to bottom, rgb(255, 255, 255) 90%, rgba(255, 255, 255, 0));
   height: auto;
 }
 
@@ -102,7 +103,7 @@
 
 .services {
   text-align: center;
-  padding: 12rem;
+  margin: 12rem;
 }
 
 .services div {

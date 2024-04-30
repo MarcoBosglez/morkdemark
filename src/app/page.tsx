@@ -4,7 +4,7 @@ import { ReactTyped } from "react-typed";
 import Image from "next/image";
 import Link from 'next/link';
 import NavBar from "./navbar"
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
 {/* MaterialUI Imports*/}
 import MenuIcon from '@mui/icons-material/Menu';
@@ -18,6 +18,11 @@ import Divider from '@mui/material/Divider';
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Sphere } from "@react-three/drei";
 import { pointsInner, pointsOuter } from "./utils";
+
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import SplitType from "split-type"
 
 {/* Art Imports*/}
 import prisoner_boy from "/src/app/img/prisoner_boy.png"
@@ -53,6 +58,8 @@ import BachelorsDegree from "/src/app/img/bachelorsdegree.jpg"
 import TecIcon from "/src/app/img/TecLogo.png"
 import ScaleIcon from "/src/app/img/ScaleLogo.png"
 import NDSIcon from "/src/app/img/NDSLogo.png"
+import { types } from "util";
+import { blue } from "@mui/material/colors";
 
 const ColoredLine = ( color: any ) => (
   <hr
@@ -90,8 +97,8 @@ const Point = ({ position, color }) => {
     <Sphere position={position} args={[0.1, 10, 10]}>
       <meshStandardMaterial
         emissive={color}
-        emissiveIntensity={0.5}
-        roughness={0.5}
+        emissiveIntensity={0.75}
+        roughness={1}
         color={color}
       />
     </Sphere>
@@ -99,8 +106,40 @@ const Point = ({ position, color }) => {
 };
 
 export default function Home() {
+  const container = useRef(null);
+  const { contextSafe } = useGSAP({ scope: container })
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  useGSAP(() => {
+    // Animation for Skills SECTION
+    const split = new SplitType('#services > *', {types: "lines"})
+    split.lines.forEach((target) => {
+      gsap.fromTo(target, 
+        {
+          opacity: 0,
+          x: -200,
+        },
+        {
+          opacity: 1,
+          x: 0,
+          ease: "sine.inOut",
+          duration: 5,
+          scrollTrigger: {
+            trigger: '#services > h2',
+            //markers: true,
+            scrub: 1,
+            start: "top center",
+            end: "+=18%",
+          }
+        }
+      )
+    })
+  }, {scope:container})
+
   return (
-    <main className={styles.main} id="main">
+    <main className={styles.main} id="main" ref={container}>
+
       {/* Navigation Bar with Logo and Menu Icon*/}
       <NavBar/>
 
@@ -160,19 +199,19 @@ export default function Home() {
       <div className={styles.services} id="services">
         <h2>SKILLS</h2>
 
-        <div className={styles.service_title}>
+        <div className={styles.service_title} id="service">
           <div style={{backgroundColor: 'rgb(240, 166, 81)'}}><div className={styles.background_text_alt}>5Y</div></div>
           <h1>C++ PYTHON</h1>
         </div>
-        <div className={styles.service_title}>
+        <div className={styles.service_title} id="service">
           <div style={{backgroundColor: 'rgb(216, 84, 84)'}}><div className={styles.background_text}>3Y</div></div>
           <h1>JAVA C# JS</h1>
         </div>
-        <div className={styles.service_title}>
+        <div className={styles.service_title} id="service">
           <div style={{backgroundColor: 'rgb(240, 166, 81)'}}><div className={styles.background_text_alt}>2Y</div></div>
           <h1>REACT NODE</h1>
         </div>
-        <div className={styles.service_title}>
+        <div className={styles.service_title} id="service">
           <div style={{backgroundColor: 'rgb(216, 84, 84)'}}><div className={styles.background_text}>1Y</div></div>
           <h1>UX/UI</h1>
         </div>

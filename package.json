@@ -24,6 +24,7 @@
     "react-dom": "^18",
     "react-sticky-nav": "^4.0.6",
     "react-typed": "^2.0.12",
+    "split-type": "^0.3.4",
     "three": "^0.164.0"
   },
   "devDependencies": {
